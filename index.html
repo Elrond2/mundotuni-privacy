@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Política de Privacidad de Mundo Tuni: Aprende Jugando — aplicación educativa infantil para niños de 2 a 5 años." />
+  <title>Política de Privacidad — Mundo Tuni: Aprende Jugando</title>
+  <style>
+    /* ── Reset ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    /* ── Tokens ── */
+    :root {
+      --color-bg:        #FAFAF8;
+      --color-surface:   #FFFFFF;
+      --color-border:    #E5E5E0;
+      --color-text:      #1A1A18;
+      --color-muted:     #6B6B63;
+      --color-accent:    #4A90D9;
+      --color-accent-bg: #EEF5FC;
+      --color-positive:  #2E7D56;
+      --color-positive-bg: #EAF5EE;
+      --color-warning:   #B45309;
+      --color-warning-bg: #FEF3C7;
+      --radius-card:     12px;
+      --radius-badge:    6px;
+      --font-sans:       -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      --max-width:       760px;
+    }
+
+    /* ── Base ── */
+    html { font-size: 16px; scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--color-bg);
+      color: var(--color-text);
+      line-height: 1.65;
+      padding: 0 16px 80px;
+    }
+
+    /* ── Layout ── */
+    .wrapper { max-width: var(--max-width); margin: 0 auto; }
+
+    /* ── Header ── */
+    header {
+      background: var(--color-surface);
+      border-bottom: 1px solid var(--color-border);
+      padding: 28px 0 24px;
+      margin-bottom: 32px;
+    }
+    header .wrapper { display: flex; flex-direction: column; gap: 6px; }
+
+    .header-app { display: flex; align-items: center; gap: 12px; }
+    .app-icon {
+      width: 52px; height: 52px; border-radius: 12px;
+      background: linear-gradient(135deg, #7EC8E3 0%, #A8EDCA 100%);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 26px; flex-shrink: 0;
+    }
+    .app-meta h1 { font-size: 1.25rem; font-weight: 700; }
+    .app-meta p  { font-size: 0.8rem; color: var(--color-muted); }
+
+    .doc-title {
+      font-size: 0.95rem; color: var(--color-muted); font-weight: 600;
+      letter-spacing: 0.04em; text-transform: uppercase;
+      margin-top: 8px;
+    }
+
+    /* ── Summary bar ── */
+    .summary-bar {
+      background: var(--color-positive-bg);
+      border: 1px solid #B2D8C2;
+      border-radius: var(--radius-card);
+      padding: 16px 20px;
+      margin-bottom: 32px;
+      display: flex; flex-direction: column; gap: 8px;
+    }
+    .summary-bar h2 { font-size: 0.95rem; font-weight: 700; color: var(--color-positive); }
+    .check-list { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+    .check-list li { font-size: 0.9rem; display: flex; align-items: flex-start; gap: 8px; }
+    .check-list li::before { content: "✓"; color: var(--color-positive); font-weight: 700; flex-shrink: 0; }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-card);
+      padding: 20px 24px;
+      margin-bottom: 40px;
+    }
+    .toc h2 { font-size: 0.85rem; font-weight: 700; color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 12px; }
+    .toc ol  { padding-left: 20px; display: flex; flex-direction: column; gap: 4px; }
+    .toc a   { color: var(--color-accent); text-decoration: none; font-size: 0.9rem; }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    section { margin-bottom: 40px; }
+    section h2 {
+      font-size: 1.15rem; font-weight: 700;
+      border-bottom: 2px solid var(--color-accent);
+      padding-bottom: 8px; margin-bottom: 16px;
+      display: flex; align-items: center; gap: 10px;
+    }
+    .section-icon { font-size: 1.1rem; }
+
+    section h3 {
+      font-size: 1rem; font-weight: 700;
+      margin: 20px 0 8px;
+      color: var(--color-text);
+    }
+
+    p { margin-bottom: 12px; font-size: 0.95rem; }
+    p:last-child { margin-bottom: 0; }
+
+    ul, ol { padding-left: 22px; margin-bottom: 12px; }
+    li { font-size: 0.95rem; margin-bottom: 4px; }
+
+    /* ── Callout cards ── */
+    .callout {
+      border-radius: var(--radius-card);
+      padding: 16px 20px;
+      margin: 16px 0;
+      font-size: 0.9rem;
+    }
+    .callout-info    { background: var(--color-accent-bg);   border-left: 4px solid var(--color-accent); }
+    .callout-warning { background: var(--color-warning-bg);  border-left: 4px solid var(--color-warning); }
+    .callout-success { background: var(--color-positive-bg); border-left: 4px solid var(--color-positive); }
+    .callout strong  { display: block; margin-bottom: 4px; }
+
+    /* ── Data table ── */
+    .data-table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.88rem; }
+    .data-table th, .data-table td {
+      text-align: left; padding: 10px 12px;
+      border: 1px solid var(--color-border);
+      vertical-align: top;
+    }
+    .data-table thead th {
+      background: #F0F0EC; font-weight: 700; font-size: 0.82rem;
+      text-transform: uppercase; letter-spacing: 0.04em;
+    }
+    .data-table tbody tr:nth-child(even) { background: var(--color-bg); }
+    .table-wrapper { overflow-x: auto; margin: 12px 0; }
+
+    /* ── Badges ── */
+    .badge {
+      display: inline-block; font-size: 0.72rem; font-weight: 700;
+      padding: 2px 8px; border-radius: var(--radius-badge);
+      letter-spacing: 0.03em; text-transform: uppercase;
+    }
+    .badge-local { background: var(--color-positive-bg); color: var(--color-positive); }
+    .badge-none  { background: #F3F3F0; color: var(--color-muted); border: 1px solid var(--color-border); }
+
+    /* ── Contact box ── */
+    .contact-box {
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-card);
+      padding: 20px 24px;
+      margin-top: 16px;
+    }
+    .contact-box p { margin-bottom: 6px; }
+    .contact-box a { color: var(--color-accent); }
+
+    /* ── Footer ── */
+    footer {
+      border-top: 1px solid var(--color-border);
+      margin-top: 48px; padding-top: 24px;
+      font-size: 0.82rem; color: var(--color-muted);
+      display: flex; flex-direction: column; gap: 4px;
+    }
+
+    /* ── Language note ── */
+    .lang-note {
+      background: #F8F8F5; border: 1px solid var(--color-border);
+      border-radius: var(--radius-badge); padding: 10px 14px;
+      font-size: 0.82rem; color: var(--color-muted);
+      margin-bottom: 32px;
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 500px) {
+      body { padding: 0 12px 60px; }
+      header { padding: 20px 0 18px; }
+      section h2 { font-size: 1.05rem; }
+      .data-table th, .data-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ HEADER ══════════════════════════════════════════════════════════ -->
+<header>
+  <div class="wrapper">
+    <div class="header-app">
+      <div class="app-icon">🌍</div>
+      <div class="app-meta">
+        <h1>Mundo Tuni: Aprende Jugando</h1>
+        <p>Bundle ID: es.mundotuni.tuni &nbsp;·&nbsp; iOS &amp; Android</p>
+      </div>
+    </div>
+    <p class="doc-title">Política de Privacidad</p>
+  </div>
+</header>
+
+<div class="wrapper">
+
+  <!-- ── Language note ── -->
+  <p class="lang-note">
+    🌐 Este documento está redactado en español (es-ES) como idioma principal. Si deseas una versión en inglés, escríbenos a <a href="mailto:efranco@biothink.es">efranco@biothink.es</a> y te la facilitamos sin coste.
+  </p>
+
+  <!-- ── Summary bar ── -->
+  <div class="summary-bar">
+    <h2>Resumen rápido — Lo más importante</h2>
+    <ul class="check-list">
+      <li>No recogemos ningún dato personal del niño ni del tutor.</li>
+      <li>No hay publicidad ni rastreo de ningún tipo.</li>
+      <li>Todo el progreso se guarda solo en tu dispositivo y se borra al desinstalar.</li>
+      <li>No existen servidores propios ni copias de seguridad en la nube.</li>
+      <li>La sección de ajustes está protegida por una comprobación parental.</li>
+      <li>La app cumple con COPPA (EE. UU.) y el RGPD/GDPR-K (UE).</li>
+    </ul>
+  </div>
+
+  <!-- ══ TOC ══════════════════════════════════════════════════════════ -->
+  <nav class="toc" aria-label="Índice de contenidos">
+    <h2>Índice</h2>
+    <ol>
+      <li><a href="#s1">¿Quiénes somos?</a></li>
+      <li><a href="#s2">Ámbito y usuarios destinatarios</a></li>
+      <li><a href="#s3">Datos que NO recogemos</a></li>
+      <li><a href="#s4">Datos que se almacenan localmente</a></li>
+      <li><a href="#s5">Terceros y servicios externos</a></li>
+      <li><a href="#s6">Voz generada con Inteligencia Artificial</a></li>
+      <li><a href="#s7">Control parental y acceso a ajustes</a></li>
+      <li><a href="#s8">Modelo de monetización freemium</a></li>
+      <li><a href="#s9">Menores de 13 años — COPPA (EE. UU.)</a></li>
+      <li><a href="#s10">Menores en la Unión Europea — RGPD y GDPR-K</a></li>
+      <li><a href="#s11">Derechos de padres y tutores</a></li>
+      <li><a href="#s12">Seguridad</a></li>
+      <li><a href="#s13">Cambios en esta política</a></li>
+      <li><a href="#s14">Contacto</a></li>
+    </ol>
+  </nav>
+
+  <!-- ══ SECCIÓN 1 ════════════════════════════════════════════════════ -->
+  <section id="s1">
+    <h2><span class="section-icon">🏢</span> 1. ¿Quiénes somos?</h2>
+    <p><strong>Responsable del tratamiento:</strong> Emilio Franco, desarrollador independiente, con correo electrónico de contacto <a href="mailto:efranco@biothink.es">efranco@biothink.es</a>.</p>
+    <p><strong>Nombre de la aplicación:</strong> Mundo Tuni: Aprende Jugando<br>
+       <strong>Bundle ID:</strong> es.mundotuni.tuni<br>
+       <strong>Plataformas:</strong> iOS (App Store) y Android (Google Play)</p>
+    <p>Esta política de privacidad describe cómo funciona la aplicación en relación con los datos de sus usuarios. Dado que <strong>la app no recoge ni transmite datos personales</strong>, el alcance de esta política se limita principalmente a informar sobre qué información se almacena localmente en el dispositivo y a cumplir con las obligaciones legales aplicables.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 2 ════════════════════════════════════════════════════ -->
+  <section id="s2">
+    <h2><span class="section-icon">👶</span> 2. Ámbito y usuarios destinatarios</h2>
+    <p>Mundo Tuni: Aprende Jugando es una <strong>aplicación educativa para niñas y niños de 2 a 5 años</strong>. El uso de la app está destinado a ser supervisado por un padre, madre o tutor legal («tutor»). No está pensada para ser usada de forma autónoma por menores sin supervisión adulta.</p>
+    <p>La aplicación está diseñada desde su origen con la filosofía de <em>privacy by design</em> orientada a los menores: no solicita información personal, no requiere registro de cuenta, no conecta a internet para funcionar y no genera perfiles de usuario.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 3 ════════════════════════════════════════════════════ -->
+  <section id="s3">
+    <h2><span class="section-icon">🚫</span> 3. Datos que NO recogemos</h2>
+    <p>Mundo Tuni <strong>no recoge, no almacena y no transmite</strong> ninguno de los siguientes datos, ni de los menores ni de los tutores:</p>
+    <ul>
+      <li>Nombre, apellidos ni ningún identificador personal.</li>
+      <li>Dirección de correo electrónico ni número de teléfono.</li>
+      <li>Ubicación geográfica (GPS, IP ni ningún otro método).</li>
+      <li>Identificadores de dispositivo (IDFA, GAID, Android ID, etc.).</li>
+      <li>Datos biométricos, de salud ni fotografías.</li>
+      <li>Información de contactos del dispositivo.</li>
+      <li>Datos de cámara ni micrófono.</li>
+      <li>Historial de navegación ni uso de otras apps.</li>
+      <li>Datos de pago ni información bancaria.</li>
+    </ul>
+    <div class="callout callout-success">
+      <strong>Sin red, sin cuenta, sin rastro.</strong>
+      La aplicación no requiere conexión a internet para su funcionamiento principal. No existe ningún servidor de Mundo Tuni al que se envíe información.
+    </div>
+  </section>
+
+  <!-- ══ SECCIÓN 4 ════════════════════════════════════════════════════ -->
+  <section id="s4">
+    <h2><span class="section-icon">💾</span> 4. Datos que se almacenan localmente</h2>
+    <p>La app guarda una cantidad mínima de información <strong>exclusivamente en el almacenamiento local del dispositivo</strong> (mediante <code>SharedPreferences</code> en Android y el equivalente en iOS). Esta información <strong>nunca sale del dispositivo</strong> y se elimina automáticamente al desinstalar la aplicación.</p>
+
+    <div class="table-wrapper">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Dato almacenado</th>
+            <th>Finalidad</th>
+            <th>Tipo</th>
+            <th>Destino</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Progreso de actividades<br><small>(estrellas por módulo)</small></td>
+            <td>Mostrar al niño su avance y recompensar el esfuerzo</td>
+            <td>Numérico anónimo</td>
+            <td><span class="badge badge-local">Solo local</span></td>
+          </tr>
+          <tr>
+            <td>Preferencia de sonido<br><small>(activado / desactivado)</small></td>
+            <td>Recordar la configuración de audio entre sesiones</td>
+            <td>Booleano</td>
+            <td><span class="badge badge-local">Solo local</span></td>
+          </tr>
+          <tr>
+            <td>Timestamp de última visita</td>
+            <td>Personalizar el saludo de bienvenida</td>
+            <td>Fecha/hora</td>
+            <td><span class="badge badge-local">Solo local</span></td>
+          </tr>
+          <tr>
+            <td>Flag de onboarding completado</td>
+            <td>Evitar mostrar la introducción en sucesivos inicios</td>
+            <td>Booleano</td>
+            <td><span class="badge badge-local">Solo local</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="callout callout-info">
+      <strong>Ninguno de estos datos es personal.</strong>
+      No contienen nombre, identificador de usuario ni ningún otro elemento que permita identificar a la persona que usa la app. No están vinculados a ninguna cuenta ni perfil.
+    </div>
+
+    <h3>¿Cómo borrar estos datos?</h3>
+    <p>Puedes eliminar todos los datos locales de cualquiera de estas formas:</p>
+    <ul>
+      <li><strong>Desinstalando la app:</strong> todos los datos se borran automáticamente.</li>
+      <li><strong>Desde los ajustes del sistema operativo:</strong> accede a Ajustes → Aplicaciones → Mundo Tuni → Borrar datos (Android) o reinstalando la app (iOS).</li>
+    </ul>
+  </section>
+
+  <!-- ══ SECCIÓN 5 ════════════════════════════════════════════════════ -->
+  <section id="s5">
+    <h2><span class="section-icon">🔌</span> 5. Terceros y servicios externos</h2>
+    <p>Mundo Tuni <strong>no integra ningún SDK de terceros</strong> para publicidad, analítica, rastreo, redes sociales ni ningún otro propósito que implique transferencia de datos fuera del dispositivo. En concreto:</p>
+    <ul>
+      <li><strong>Sin publicidad:</strong> no hay anuncios de ningún tipo (display, vídeo, nativa, etc.).</li>
+      <li><strong>Sin analytics:</strong> no se usa Google Analytics, Firebase, Mixpanel, Amplitude ni herramienta similar.</li>
+      <li><strong>Sin rastreo:</strong> no se usa ninguna tecnología de tracking entre aplicaciones o sitios web.</li>
+      <li><strong>Sin redes sociales:</strong> no hay botones de compartir, inicio de sesión social ni integración con plataformas de terceros.</li>
+      <li><strong>Sin servicios de backend propio:</strong> no existe ningún servidor, base de datos ni servicio en la nube gestionado por el desarrollador.</li>
+    </ul>
+    <div class="callout callout-success">
+      <strong>App Store / Google Play.</strong>
+      Las plataformas de distribución (Apple App Store y Google Play) pueden recoger estadísticas de descarga y métricas de rendimiento de la app de conformidad con sus propias políticas de privacidad, sobre las que no tenemos control. Estas operaciones son independientes del funcionamiento de la app y son gestionadas directamente por Apple y Google.
+    </div>
+  </section>
+
+  <!-- ══ SECCIÓN 6 ════════════════════════════════════════════════════ -->
+  <section id="s6">
+    <h2><span class="section-icon">🎙️</span> 6. Voz generada con Inteligencia Artificial</h2>
+    <p>Los locuciones y efectos de voz del personaje Tuni incluidos en la aplicación han sido generados mediante tecnología de síntesis de voz por Inteligencia Artificial.</p>
+    <div class="callout callout-warning">
+      <strong>Nota sobre licencias comerciales.</strong>
+      En este momento estamos completando la revisión de las licencias comerciales aplicables al motor de síntesis de voz utilizado. Antes de la publicación oficial de la aplicación en las tiendas de apps, todos los activos de audio estarán correctamente licenciados para uso comercial o serán sustituidos. Esta situación no afecta a la privacidad de los usuarios.
+    </div>
+    <p>En ningún caso la generación de la voz implica la captura ni el procesamiento de la voz, audio o sonidos del usuario o del menor.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 7 ════════════════════════════════════════════════════ -->
+  <section id="s7">
+    <h2><span class="section-icon">🔐</span> 7. Control parental y acceso a ajustes</h2>
+    <p>La sección de ajustes de la aplicación está protegida mediante una <strong>comprobación parental</strong> (parent gate) que consiste en resolver una operación matemática sencilla. Esta medida está diseñada para garantizar que los cambios de configuración sean realizados por un adulto y no accidentalmente por el menor.</p>
+    <p>La resolución de esta operación matemática:</p>
+    <ul>
+      <li>Se procesa completamente en el dispositivo, sin conexión a internet.</li>
+      <li>No genera ni almacena ningún registro de acceso.</li>
+      <li>No solicita contraseña, PIN ni dato personal alguno.</li>
+    </ul>
+  </section>
+
+  <!-- ══ SECCIÓN 8 ════════════════════════════════════════════════════ -->
+  <section id="s8">
+    <h2><span class="section-icon">🛒</span> 8. Modelo de monetización freemium</h2>
+    <p>La aplicación sigue un modelo <strong>freemium</strong>: algunos contenidos están disponibles de forma gratuita y otros pueden desbloquearse como contenido premium.</p>
+    <p>En la versión actual, el desbloqueo de contenido premium se gestiona <strong>íntegramente de forma local</strong> en el dispositivo, sin pasarela de pago real implementada. No se realizan transacciones económicas ni se recogen datos de pago en esta versión.</p>
+    <p>Cuando en el futuro se implementen compras integradas (in-app purchases), estas se realizarán exclusivamente a través de los sistemas de pago oficiales de Apple (App Store) y Google (Google Play), que tienen sus propias políticas de privacidad. En ese momento, esta política se actualizará para reflejar dicho cambio.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 9 ════════════════════════════════════════════════════ -->
+  <section id="s9">
+    <h2><span class="section-icon">🇺🇸</span> 9. Menores de 13 años — COPPA (EE. UU.)</h2>
+    <p>La <em>Children's Online Privacy Protection Act</em> (COPPA) exige a los operadores de servicios en línea dirigidos a menores de 13 años que obtengan el consentimiento verificable de los padres antes de recoger información personal de esos menores.</p>
+
+    <h3>Cumplimiento COPPA de Mundo Tuni</h3>
+    <p>Mundo Tuni cumple con COPPA de la forma más sencilla posible: <strong>no recoge ninguna información personal de menores ni de sus tutores</strong>. Al no existir recopilación de datos personales, no se requiere consentimiento parental para el uso de la aplicación.</p>
+    <p>En concreto:</p>
+    <ul>
+      <li>La app no solicita nombre, edad, correo electrónico ni ningún dato identificativo.</li>
+      <li>No hay registro de usuario ni creación de perfiles.</li>
+      <li>No se comparte ninguna información con terceros.</li>
+      <li>No hay publicidad comportamental ni de ningún otro tipo.</li>
+      <li>No se usa geolocalización.</li>
+    </ul>
+    <div class="callout callout-success">
+      Dado que Mundo Tuni no recoge información personal de niños menores de 13 años, la app está diseñada para ser plenamente compatible con los requisitos de la COPPA (15 U.S.C. § 6501 et seq.) y las reglas de la FTC que la desarrollan (16 C.F.R. Part 312).
+    </div>
+  </section>
+
+  <!-- ══ SECCIÓN 10 ═══════════════════════════════════════════════════ -->
+  <section id="s10">
+    <h2><span class="section-icon">🇪🇺</span> 10. Menores en la Unión Europea — RGPD y GDPR-K</h2>
+    <p>El <em>Reglamento General de Protección de Datos</em> (RGPD / GDPR, Reglamento UE 2016/679) y, en especial, las disposiciones específicas sobre menores (<em>GDPR-K</em>) establecen una protección reforzada para el tratamiento de datos de menores de edad.</p>
+
+    <h3>Base jurídica y tratamiento</h3>
+    <p>Dado que Mundo Tuni <strong>no trata datos personales</strong> de ningún tipo, no es necesario invocar base jurídica alguna para el tratamiento de datos de menores. La app no está sujeta a las obligaciones del RGPD relativas al consentimiento parental (artículo 8 RGPD) porque no existe tratamiento de datos que lo requiera.</p>
+
+    <h3>Principios de privacidad por diseño y por defecto</h3>
+    <p>La arquitectura de la app ha sido diseñada conforme al artículo 25 del RGPD:</p>
+    <ul>
+      <li><strong>Minimización de datos:</strong> solo se almacena localmente la información estrictamente necesaria para el funcionamiento de la app.</li>
+      <li><strong>Limitación de finalidad:</strong> los datos locales se usan únicamente para la finalidad para la que fueron creados.</li>
+      <li><strong>Limitación del plazo de conservación:</strong> los datos se eliminan automáticamente al desinstalar.</li>
+      <li><strong>Integridad y confidencialidad:</strong> los datos nunca salen del dispositivo.</li>
+    </ul>
+
+    <h3>Transferencia internacional de datos</h3>
+    <p>No se realiza ninguna transferencia de datos a terceros países, ya que no existe transferencia de datos de ningún tipo.</p>
+
+    <h3>Delegado de Protección de Datos (DPD)</h3>
+    <p>Dada la naturaleza y escala del tratamiento, no existe obligación legal de designar un DPD conforme al artículo 37 del RGPD. Para cualquier consulta relacionada con la protección de datos, puedes contactar directamente con el desarrollador en <a href="mailto:efranco@biothink.es">efranco@biothink.es</a>.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 11 ═══════════════════════════════════════════════════ -->
+  <section id="s11">
+    <h2><span class="section-icon">⚖️</span> 11. Derechos de padres y tutores</h2>
+    <p>Aunque Mundo Tuni no trata datos personales, reconocemos los siguientes derechos a los tutores que pueden ejercerse en cualquier momento escribiendo a <a href="mailto:efranco@biothink.es">efranco@biothink.es</a>:</p>
+    <ul>
+      <li><strong>Derecho de acceso:</strong> a conocer qué información (si la hubiera) se almacena en relación con el uso de la app.</li>
+      <li><strong>Derecho de supresión:</strong> a eliminar cualquier dato. En la práctica, basta con desinstalar la app.</li>
+      <li><strong>Derecho de rectificación:</strong> a corregir cualquier dato inexacto.</li>
+      <li><strong>Derecho de oposición:</strong> a oponerse al tratamiento de datos.</li>
+      <li><strong>Derecho de portabilidad:</strong> a recibir los datos en un formato estructurado.</li>
+      <li><strong>Derecho a presentar una reclamación:</strong> ante la Agencia Española de Protección de Datos (AEPD) en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a> o ante la autoridad de control de tu país de residencia en la UE.</li>
+    </ul>
+    <p>Responderemos a cualquier solicitud en un plazo máximo de <strong>30 días</strong> desde su recepción.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 12 ═══════════════════════════════════════════════════ -->
+  <section id="s12">
+    <h2><span class="section-icon">🛡️</span> 12. Seguridad</h2>
+    <p>Aunque no tratamos datos personales, hemos adoptado las siguientes medidas técnicas para proteger la información almacenada localmente:</p>
+    <ul>
+      <li>Los datos locales están almacenados en el área de almacenamiento privada de la app, inaccesible para otras aplicaciones del dispositivo.</li>
+      <li>No se realizan conexiones de red que pudieran exponer la información del dispositivo.</li>
+      <li>La sección de ajustes sensibles está protegida por el parent gate descrito en la sección 7.</li>
+    </ul>
+    <p>La seguridad del dispositivo en su conjunto (contraseña de pantalla, actualizaciones del sistema operativo, etc.) es responsabilidad del tutor.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 13 ═══════════════════════════════════════════════════ -->
+  <section id="s13">
+    <h2><span class="section-icon">🔄</span> 13. Cambios en esta política</h2>
+    <p>Esta política puede actualizarse ocasionalmente para reflejar cambios en la funcionalidad de la app (por ejemplo, cuando se implementen compras integradas reales) o para adaptarse a nuevos requisitos legales.</p>
+    <p>Cuando se realicen cambios materiales:</p>
+    <ul>
+      <li>Actualizaremos la fecha de «Última actualización» en la parte inferior de este documento.</li>
+      <li>Notificaremos el cambio a través de una actualización de la app en las tiendas de aplicaciones.</li>
+      <li>Si los cambios afectan al tratamiento de datos personales, solicitaremos el consentimiento necesario.</li>
+    </ul>
+    <p>Te recomendamos revisar esta política periódicamente. El uso continuado de la aplicación tras la publicación de cambios implica la aceptación de la política actualizada.</p>
+  </section>
+
+  <!-- ══ SECCIÓN 14 ═══════════════════════════════════════════════════ -->
+  <section id="s14">
+    <h2><span class="section-icon">✉️</span> 14. Contacto</h2>
+    <p>Si tienes preguntas, dudas o solicitudes relacionadas con esta política de privacidad o con el tratamiento de datos de la aplicación, puedes contactarnos:</p>
+    <div class="contact-box">
+      <p><strong>Emilio Franco</strong></p>
+      <p>Desarrollador de Mundo Tuni: Aprende Jugando</p>
+      <p>📧 <a href="mailto:efranco@biothink.es">efranco@biothink.es</a></p>
+      <p style="margin-top: 12px; font-size: 0.85rem; color: var(--color-muted);">Tiempo de respuesta habitual: 2–5 días laborables. Máximo legal: 30 días.</p>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ════════════════════════════════════════════════════════ -->
+  <footer>
+    <p><strong>Mundo Tuni: Aprende Jugando</strong> &nbsp;·&nbsp; Bundle ID: es.mundotuni.tuni</p>
+    <p>Versión de esta política: <strong>1.0</strong> &nbsp;·&nbsp; Última actualización: <strong>31 de mayo de 2026</strong></p>
+    <p>© 2026 Emilio Franco. Todos los derechos reservados.</p>
+    <p style="margin-top: 8px;">
+      Este documento está disponible en español (es-ES) como idioma principal.
+      Para solicitar la versión en inglés, escribe a <a href="mailto:efranco@biothink.es">efranco@biothink.es</a>.
+    </p>
+  </footer>
+
+</div><!-- /wrapper -->
+</body>
+</html>
