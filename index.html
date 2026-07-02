@@ -214,10 +214,10 @@
   <div class="summary-bar">
     <h2>Resumen rápido — Lo más importante</h2>
     <ul class="check-list">
-      <li>No recogemos ningún dato personal del niño ni del tutor.</li>
+      <li>No recogemos datos personales del niño (nombre, edad, cuenta, etc.).</li>
       <li>No hay publicidad ni rastreo de ningún tipo.</li>
-      <li>Todo el progreso se guarda solo en tu dispositivo y se borra al desinstalar.</li>
-      <li>No existen servidores propios ni copias de seguridad en la nube.</li>
+      <li>El progreso de juego se guarda solo en tu dispositivo y se borra al desinstalar.</li>
+      <li>Las compras premium usan Apple/Google; RevenueCat valida el recibo con un ID anónimo (ver §5 y §8).</li>
       <li>La sección de ajustes está protegida por una comprobación parental.</li>
       <li>La app cumple con COPPA (EE. UU.) y el RGPD/GDPR-K (UE).</li>
     </ul>
@@ -251,7 +251,7 @@
     <p><strong>Nombre de la aplicación:</strong> Mundo Tuni: Aprende Jugando<br>
        <strong>Bundle ID:</strong> es.mundotuni.tuni<br>
        <strong>Plataformas:</strong> iOS (App Store) y Android (Google Play)</p>
-    <p>Esta política de privacidad describe cómo funciona la aplicación en relación con los datos de sus usuarios. Dado que <strong>la app no recoge ni transmite datos personales</strong>, el alcance de esta política se limita principalmente a informar sobre qué información se almacena localmente en el dispositivo y a cumplir con las obligaciones legales aplicables.</p>
+    <p>Esta política de privacidad describe cómo funciona la aplicación en relación con los datos de sus usuarios. <strong>No recogemos datos personales del niño</strong> (nombre, edad, cuenta, etc.). El progreso de juego se almacena solo en el dispositivo. Para gestionar compras premium, usamos el SDK de RevenueCat, que transmite a sus servidores el recibo de la tienda y un identificador anónimo — detallado en las secciones 5 y 8.</p>
   </section>
 
   <!-- ══ SECCIÓN 2 ════════════════════════════════════════════════════ -->
@@ -342,14 +342,29 @@
   <!-- ══ SECCIÓN 5 ════════════════════════════════════════════════════ -->
   <section id="s5">
     <h2><span class="section-icon">🔌</span> 5. Terceros y servicios externos</h2>
-    <p>Mundo Tuni <strong>no integra ningún SDK de terceros</strong> para publicidad, analítica, rastreo, redes sociales ni ningún otro propósito que implique transferencia de datos fuera del dispositivo. En concreto:</p>
+    <p>Mundo Tuni <strong>no integra SDK de terceros</strong> para publicidad, analítica, rastreo ni redes sociales. En concreto:</p>
     <ul>
       <li><strong>Sin publicidad:</strong> no hay anuncios de ningún tipo (display, vídeo, nativa, etc.).</li>
       <li><strong>Sin analytics:</strong> no se usa Google Analytics, Firebase, Mixpanel, Amplitude ni herramienta similar.</li>
       <li><strong>Sin rastreo:</strong> no se usa ninguna tecnología de tracking entre aplicaciones o sitios web.</li>
       <li><strong>Sin redes sociales:</strong> no hay botones de compartir, inicio de sesión social ni integración con plataformas de terceros.</li>
-      <li><strong>Sin servicios de backend propio:</strong> no existe ningún servidor, base de datos ni servicio en la nube gestionado por el desarrollador.</li>
+      <li><strong>Sin servicios de backend propio:</strong> no existe ningún servidor, base de datos ni servicio en la nube gestionado por el desarrollador para el progreso del juego.</li>
     </ul>
+
+    <h3>RevenueCat (gestión de compras)</h3>
+    <p>
+      La gestión técnica del estado de las compras se realiza mediante
+      <strong>RevenueCat SDK</strong>. Para validar y restaurar las compras, RevenueCat
+      recibe en sus servidores el <strong>recibo de compra</strong> de la tienda y un
+      <strong>identificador anónimo</strong> generado por el propio SDK, no vinculado al
+      nombre, correo electrónico ni a identificadores publicitarios (IDFA) del usuario.
+      Estos datos se tratan con la única finalidad de gestionar las compras y pueden
+      transferirse a EE. UU. al amparo de las Cláusulas Contractuales Tipo (SCC) y del
+      Data Privacy Framework de RevenueCat. Para más información, consulta la
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">
+      política de privacidad de RevenueCat</a>.
+    </p>
+
     <div class="callout callout-success">
       <strong>App Store / Google Play.</strong>
       Las plataformas de distribución (Apple App Store y Google Play) pueden recoger estadísticas de descarga y métricas de rendimiento de la app de conformidad con sus propias políticas de privacidad, sobre las que no tenemos control. Estas operaciones son independientes del funcionamiento de la app y son gestionadas directamente por Apple y Google.
@@ -383,8 +398,9 @@
   <section id="s8">
     <h2><span class="section-icon">🛒</span> 8. Modelo de monetización freemium</h2>
     <p>La aplicación sigue un modelo <strong>freemium</strong>: algunos contenidos están disponibles de forma gratuita y otros pueden desbloquearse como contenido premium.</p>
-    <p>En la versión actual, el desbloqueo de contenido premium se gestiona <strong>íntegramente de forma local</strong> en el dispositivo, sin pasarela de pago real implementada. No se realizan transacciones económicas ni se recogen datos de pago en esta versión.</p>
-    <p>Cuando en el futuro se implementen compras integradas (in-app purchases), estas se realizarán exclusivamente a través de los sistemas de pago oficiales de Apple (App Store) y Google (Google Play), que tienen sus propias políticas de privacidad. En ese momento, esta política se actualizará para reflejar dicho cambio.</p>
+    <p>Las compras integradas (in-app purchases) se realizan exclusivamente a través de los sistemas de pago oficiales de <strong>Apple (App Store)</strong> y <strong>Google (Google Play)</strong>. El desarrollador no recibe ni almacena datos de tarjeta ni información bancaria: el pago lo procesa la tienda.</p>
+    <p>Para validar y restaurar el estado premium en el dispositivo, la app usa <strong>RevenueCat SDK</strong> (ver sección 5): se envían el recibo de compra de la tienda y un identificador anónimo del SDK. No se recogen datos de pago en nuestros servidores (no tenemos servidores propios).</p>
+    <p>El acceso al paywall de compra está siempre detrás de una <strong>comprobación parental</strong> (parent gate), conforme a las directrices de apps infantiles.</p>
   </section>
 
   <!-- ══ SECCIÓN 9 ════════════════════════════════════════════════════ -->
@@ -393,14 +409,14 @@
     <p>La <em>Children's Online Privacy Protection Act</em> (COPPA) exige a los operadores de servicios en línea dirigidos a menores de 13 años que obtengan el consentimiento verificable de los padres antes de recoger información personal de esos menores.</p>
 
     <h3>Cumplimiento COPPA de Mundo Tuni</h3>
-    <p>Mundo Tuni cumple con COPPA de la forma más sencilla posible: <strong>no recoge ninguna información personal de menores ni de sus tutores</strong>. Al no existir recopilación de datos personales, no se requiere consentimiento parental para el uso de la aplicación.</p>
+    <p>Mundo Tuni <strong>no recoge información personal identificable del menor</strong> (nombre, edad, correo, cuenta, etc.). El progreso de juego permanece en el dispositivo. La única transmisión a un tercero relacionada con el uso de la app es la validación de compras premium mediante RevenueCat (recibo de tienda + ID anónimo), gestionada por un adulto tras el parent gate.</p>
     <p>En concreto:</p>
     <ul>
-      <li>La app no solicita nombre, edad, correo electrónico ni ningún dato identificativo.</li>
-      <li>No hay registro de usuario ni creación de perfiles.</li>
-      <li>No se comparte ninguna información con terceros.</li>
+      <li>La app no solicita nombre, edad, correo electrónico ni ningún dato identificativo del niño.</li>
+      <li>No hay registro de usuario ni perfiles con datos personales.</li>
       <li>No hay publicidad comportamental ni de ningún otro tipo.</li>
       <li>No se usa geolocalización.</li>
+      <li>No se comparten datos del niño con terceros salvo la validación de compras descrita (solo cuando un adulto realiza una compra).</li>
     </ul>
     <div class="callout callout-success">
       Dado que Mundo Tuni no recoge información personal de niños menores de 13 años, la app está diseñada para ser plenamente compatible con los requisitos de la COPPA (15 U.S.C. § 6501 et seq.) y las reglas de la FTC que la desarrollan (16 C.F.R. Part 312).
@@ -413,7 +429,7 @@
     <p>El <em>Reglamento General de Protección de Datos</em> (RGPD / GDPR, Reglamento UE 2016/679) y, en especial, las disposiciones específicas sobre menores (<em>GDPR-K</em>) establecen una protección reforzada para el tratamiento de datos de menores de edad.</p>
 
     <h3>Base jurídica y tratamiento</h3>
-    <p>Dado que Mundo Tuni <strong>no trata datos personales</strong> de ningún tipo, no es necesario invocar base jurídica alguna para el tratamiento de datos de menores. La app no está sujeta a las obligaciones del RGPD relativas al consentimiento parental (artículo 8 RGPD) porque no existe tratamiento de datos que lo requiera.</p>
+    <p>El progreso de juego y las preferencias se tratan <strong>solo en el dispositivo</strong> sin datos personales del menor. Para las compras premium, el tratamiento del recibo y el identificador anónimo de RevenueCat se basa en la <strong>ejecución del contrato</strong> (art. 6.1.b RGPD) entre el adulto comprador y la prestación del contenido desbloqueado.</p>
 
     <h3>Principios de privacidad por diseño y por defecto</h3>
     <p>La arquitectura de la app ha sido diseñada conforme al artículo 25 del RGPD:</p>
@@ -421,11 +437,11 @@
       <li><strong>Minimización de datos:</strong> solo se almacena localmente la información estrictamente necesaria para el funcionamiento de la app.</li>
       <li><strong>Limitación de finalidad:</strong> los datos locales se usan únicamente para la finalidad para la que fueron creados.</li>
       <li><strong>Limitación del plazo de conservación:</strong> los datos se eliminan automáticamente al desinstalar.</li>
-      <li><strong>Integridad y confidencialidad:</strong> los datos nunca salen del dispositivo.</li>
+      <li><strong>Integridad y confidencialidad:</strong> los datos de progreso nunca salen del dispositivo; los datos de compra se limitan al recibo e ID anónimo gestionados por RevenueCat.</li>
     </ul>
 
     <h3>Transferencia internacional de datos</h3>
-    <p>No se realiza ninguna transferencia de datos a terceros países, ya que no existe transferencia de datos de ningún tipo.</p>
+    <p>Los datos de validación de compras procesados por RevenueCat pueden transferirse a <strong>Estados Unidos</strong>, con las garantías descritas en la sección 5 (SCC y Data Privacy Framework de RevenueCat). No realizamos otras transferencias internacionales de datos personales.</p>
 
     <h3>Delegado de Protección de Datos (DPD)</h3>
     <p>Dada la naturaleza y escala del tratamiento, no existe obligación legal de designar un DPD conforme al artículo 37 del RGPD. Para cualquier consulta relacionada con la protección de datos, puedes contactar directamente con el desarrollador en <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>.</p>
@@ -486,7 +502,8 @@
   <!-- ══ FOOTER ════════════════════════════════════════════════════════ -->
   <footer>
     <p><strong>Mundo Tuni: Aprende Jugando</strong> &nbsp;·&nbsp; Bundle ID: es.mundotuni.tuni</p>
-    <p>Versión de esta política: <strong>1.0</strong> &nbsp;·&nbsp; Última actualización: <strong>31 de mayo de 2026</strong></p>
+    <p>Versión de esta política: <strong>1.1</strong> &nbsp;·&nbsp; Última actualización: <strong>2 de julio de 2026</strong></p>
+    <p style="font-size: 0.8rem; color: var(--color-muted);">Fuente canónica: repositorio <code>mundotuni</code> → <code>docs/privacy-policy.html</code>. Despliegue público: <code>https://elrond2.github.io/mundotuni-privacy/</code></p>
     <p>© 2026 Elrond2. Todos los derechos reservados.</p>
     <p style="margin-top: 8px;">
       Este documento está disponible en español (es-ES) como idioma principal.
