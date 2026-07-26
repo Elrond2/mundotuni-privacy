@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Política de Privacidad de Mundo Tuni: Aprende Jugando — aplicación educativa infantil para niños de 2 a 5 años." />
-  <title>Política de Privacidad — Mundo Tuni: Aprende Jugando</title>
+  <meta name="description" content="Mundo Tuni: Aprende Jugando — App educativa para niños de 2 a 5 años. Números, letras, formas, colores, palabras y música. Sin anuncios. Sin datos del niño." />
+  <meta property="og:title" content="Mundo Tuni: Aprende Jugando" />
+  <meta property="og:description" content="App educativa para niños de 2 a 5 años. Sin anuncios, sin datos del niño." />
+  <meta property="og:image" content="icon.svg" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <title>Mundo Tuni: Aprende Jugando</title>
   <style>
+
     /* ── Reset ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -16,7 +21,7 @@
       --color-border:    #E5E5E0;
       --color-text:      #1A1A18;
       --color-muted:     #6B6B63;
-      --color-accent:    #4A90D9;
+      --color-accent:    #2E8BD6;
       --color-accent-bg: #EEF5FC;
       --color-positive:  #2E7D56;
       --color-positive-bg: #EAF5EE;
@@ -36,20 +41,20 @@
       background: var(--color-bg);
       color: var(--color-text);
       line-height: 1.65;
-      padding: 0 16px 80px;
+      padding: 0; background: var(--color-bg);
     }
 
     /* ── Layout ── */
     .wrapper { max-width: var(--max-width); margin: 0 auto; }
 
     /* ── Header ── */
-    header {
+    .policy-header {
       background: var(--color-surface);
       border-bottom: 1px solid var(--color-border);
       padding: 28px 0 24px;
       margin-bottom: 32px;
     }
-    header .wrapper { display: flex; flex-direction: column; gap: 6px; }
+    .policy-header .wrapper { display: flex; flex-direction: column; gap: 6px; }
 
     .header-app { display: flex; align-items: center; gap: 12px; }
     .app-icon {
@@ -181,19 +186,220 @@
     /* ── Responsive ── */
     @media (max-width: 500px) {
       body { padding: 0 12px 60px; }
-      header { padding: 20px 0 18px; }
+      .policy-header { padding: 20px 0 18px; }
       section h2 { font-size: 1.05rem; }
       .data-table th, .data-table td { padding: 8px 10px; }
     }
+  
+    .app-icon-img {
+      width: 52px; height: 52px; border-radius: 12px; flex-shrink: 0;
+      display: block;
+    }
+    #privacidad {
+      background: var(--color-bg);
+      color: var(--color-text);
+      padding: 0 16px 80px;
+    }
+    #privacidad .wrapper { max-width: var(--max-width); margin: 0 auto; }
+
+
+    /* ── Landing hero (4.6) ── */
+    :root {
+      --ocean-deep: #1A4A7A;
+      --ocean-primary: #2E8BD6;
+      --ocean-mid: #4FBDCA;
+      --ocean-teal: #3DA899;
+      --tuni-coral: #FF8A5B;
+      --text-on-dark: #FFFFFF;
+      --text-on-dark-soft: rgba(255,255,255,0.88);
+      --hero-padding: clamp(24px, 5vw, 64px);
+      --font-display: -apple-system, "SF Pro Rounded", "Helvetica Neue", system-ui, Arial, sans-serif;
+    }
+
+    .skip-link {
+      position: absolute; top: -100px; left: 12px; z-index: 100;
+      background: #fff; color: #1A1A18; padding: 8px 12px; border-radius: 8px;
+      font-weight: 600; text-decoration: none;
+    }
+    .skip-link:focus { top: 12px; }
+
+    #hero {
+      min-height: 100svh;
+      background: linear-gradient(180deg, var(--ocean-deep) 0%, var(--ocean-primary) 45%, var(--ocean-mid) 80%, var(--ocean-teal) 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      padding: var(--hero-padding);
+      text-align: center;
+      color: var(--text-on-dark);
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+    .brand-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .brand-icon {
+      width: 44px; height: 44px; border-radius: 10px;
+      display: block;
+    }
+    .brand-name {
+      font-family: var(--font-display);
+      font-size: clamp(1.5rem, 5vw, 2.25rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: var(--text-on-dark);
+    }
+    .brand-sub {
+      font-size: 0.9rem;
+      color: var(--text-on-dark-soft);
+    }
+
+    .tuni-hero {
+      max-height: clamp(200px, 45vh, 320px);
+      width: auto;
+      height: auto;
+      filter: drop-shadow(0 20px 40px rgba(10, 30, 60, 0.35));
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      font-size: clamp(1.75rem, 6vw, 3rem);
+      font-weight: 700;
+      line-height: 1.2;
+      color: var(--text-on-dark);
+      max-width: 680px;
+    }
+    .hero-sub {
+      font-size: clamp(0.95rem, 2.5vw, 1.2rem);
+      color: var(--text-on-dark-soft);
+      max-width: 520px;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.22);
+    }
+
+    .benefits {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      max-width: 500px;
+      text-align: left;
+      margin: 4px 0 0;
+    }
+    .benefits li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-size: 0.95rem;
+      color: var(--text-on-dark-soft);
+      text-shadow: 0 1px 6px rgba(0,0,0,0.22);
+    }
+    .benefit-icon {
+      color: var(--tuni-coral);
+      font-size: 0.75rem;
+      margin-top: 5px;
+      flex-shrink: 0;
+    }
+    .benefits strong { color: var(--text-on-dark); font-weight: 700; }
+
+    .cta-appstore {
+      display: inline-block;
+      margin-top: 8px;
+      line-height: 0;
+    }
+    .cta-appstore img {
+      height: 52px;
+      width: auto;
+    }
+    .cta-appstore:hover { opacity: 0.85; }
+    .cta-appstore:focus-visible {
+      outline: 3px solid #fff;
+      outline-offset: 4px;
+      border-radius: 8px;
+    }
+
+    .policy-anchor {
+      font-size: 0.82rem;
+      color: var(--text-on-dark-soft);
+      text-decoration: none;
+      margin-top: 16px;
+    }
+    .policy-anchor:hover {
+      color: var(--text-on-dark);
+      text-decoration: underline;
+    }
+
+    .contact-line {
+      font-size: 0.85rem;
+      color: var(--text-on-dark-soft);
+      margin-top: 4px;
+    }
+    .contact-line a { color: var(--text-on-dark); }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto !important; }
+      * { transition: none !important; }
+    }
+
   </style>
 </head>
 <body>
+  <a class="skip-link" href="#privacidad">Saltar a Política de privacidad</a>
+
+  <section id="hero" aria-label="Mundo Tuni — Aplicación educativa">
+    <div class="brand">
+      <div class="brand-row">
+        <img src="icon.svg" alt="" aria-hidden="true" width="44" height="44" class="brand-icon" />
+        <span class="brand-name">Mundo Tuni</span>
+      </div>
+      <span class="brand-sub">Aprende Jugando · 2–5 años</span>
+    </div>
+
+    <img src="tuni.svg"
+         alt="Tuni, el personaje guía de Mundo Tuni — un bebé atún simpático y expresivo"
+         class="tuni-hero"
+         width="260" height="340" />
+
+    <h1 class="hero-headline">Aprende jugando con Tuni</h1>
+    <p class="hero-sub">Seis módulos educativos para niños de 2 a 5 años.<br />
+       Sin anuncios. Sin datos del niño.</p>
+
+    <ul class="benefits" aria-label="Características principales">
+      <li><span class="benefit-icon" aria-hidden="true">✦</span>
+          <span><strong>6 módulos</strong> — Números, letras, formas, colores, palabras y música</span></li>
+      <li><span class="benefit-icon" aria-hidden="true">✦</span>
+          <span><strong>Sin anuncios ni seguimiento</strong> — el progreso queda solo en tu dispositivo</span></li>
+      <li><span class="benefit-icon" aria-hidden="true">✦</span>
+          <span><strong>Un pago para siempre</strong> — 7,99 € de por vida, con Compartir en familia</span></li>
+    </ul>
+
+    <a href="https://apps.apple.com/es/app/mundo-tuni-aprende-jugando/id6783929763"
+       class="cta-appstore"
+       target="_blank" rel="noopener noreferrer"
+       aria-label="Descarga Mundo Tuni gratis en el App Store (se abre en nueva ventana)">
+      <img src="badge-appstore.svg" alt="Descarga en el App Store" width="180" height="54" />
+    </a>
+
+    <p class="contact-line">Contacto: <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a></p>
+    <a href="#privacidad" class="policy-anchor">Política de privacidad ↓</a>
+  </section>
+
+  <main id="privacidad" aria-label="Política de Privacidad">
+
 
 <!-- ══ HEADER ══════════════════════════════════════════════════════════ -->
-<header>
+<div class="policy-header">
   <div class="wrapper">
     <div class="header-app">
-      <div class="app-icon">🌍</div>
+      <img class="app-icon-img" src="icon.svg" alt="" width="52" height="52" aria-hidden="true">
       <div class="app-meta">
         <h1>Mundo Tuni: Aprende Jugando</h1>
         <p>Bundle ID: es.mundotuni.tuni &nbsp;·&nbsp; iOS &amp; Android</p>
@@ -201,7 +407,7 @@
     </div>
     <p class="doc-title">Política de Privacidad</p>
   </div>
-</header>
+</div>
 
 <div class="wrapper">
 
@@ -512,5 +718,7 @@
   </footer>
 
 </div><!-- /wrapper -->
+
+  </main>
 </body>
 </html>
