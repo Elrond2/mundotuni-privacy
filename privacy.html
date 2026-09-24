@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Política de Privacidad de Mundo Tuni: Aprende Jugando — aplicación educativa infantil para niños de 2 a 4 años." />
+  <title>Política de privacidad · Mundo Tuni</title>
+  <meta name="description" content="Política de privacidad de Mundo Tuni: Aprende Jugando, app educativa para niños de 2 a 4 años. Qué se guarda en el dispositivo, qué servicios intervienen en las compras y cómo ejercer tus derechos." />
+  <meta name="theme-color" content="#87CEEB" />
   <link rel="icon" href="icon.png" type="image/png" />
   <link rel="apple-touch-icon" href="apple-touch-icon.png" />
   <link rel="stylesheet" href="site.css" />
@@ -12,9 +14,11 @@
   <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
   <header class="site-header">
-    <a class="brand-link" href="index.html">
-      <img src="icon.png" alt="" width="40" height="40" aria-hidden="true" />
-      <span>Mundo Tuni</span>
+    <a class="brand-link" href="index.html" aria-label="Mundo Tuni, inicio">
+      <picture>
+        <source srcset="logo-mundo-tuni.webp" type="image/webp" />
+        <img src="logo-mundo-tuni.png" alt="Mundo Tuni" width="720" height="149" />
+      </picture>
     </a>
     <nav aria-label="Principal">
       <ul class="site-nav">
@@ -24,358 +28,318 @@
     </nav>
   </header>
 
-  <div class="doc-page" id="contenido">
+  <main class="doc-page" id="contenido">
 
-<!-- ══ HEADER ══════════════════════════════════════════════════════════ -->
-<header class="doc-header">
-  <div class="wrapper">
-    <div class="header-app">
-      <img class="app-icon-img" src="icon.png" alt="" width="52" height="52" aria-hidden="true" />
-      <div class="app-meta">
-        <h1>Mundo Tuni: Aprende Jugando</h1>
-        <p>Bundle ID: es.mundotuni.tuni &nbsp;·&nbsp; iOS &amp; Android</p>
+    <header class="doc-header">
+      <img class="app-icon-img" src="icon.png" alt="" width="72" height="72" />
+      <div>
+        <h1>Política de privacidad</h1>
+        <p>Mundo Tuni: Aprende Jugando · Versión 1.3 · 24 de septiembre de 2026</p>
       </div>
+    </header>
+
+    <div class="sheet gummy">
+
+      <p class="lang-note">
+        Este documento está redactado en español (es-ES). Si quieres una versión en inglés, escríbenos a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a> y te la enviamos sin coste.
+      </p>
+
+      <div class="summary gummy">
+        <h2>Lo más importante</h2>
+        <ul class="check-list">
+          <li>No pedimos el nombre, la fecha de nacimiento, la ubicación ni una cuenta del niño.</li>
+          <li>Al empezar, la app pregunta al adulto la edad aproximada del niño (se puede saltar) y guarda solo una franja (2–3 o 3–4 años) en el dispositivo para ajustar la dificultad. La app no la envía a ningún servicio.</li>
+          <li>No hay publicidad ni analítica del comportamiento del niño.</li>
+          <li>El progreso, las preferencias y los contadores de uso se guardan solo en el dispositivo.</li>
+          <li>Las compras las gestiona RevenueCat con un identificador técnico seudónimo (un código aleatorio, sin nombre ni correo); la recogida automática de identificadores del dispositivo está desactivada.</li>
+          <li>En iOS, RevenueCat usa la atribución estándar de Apple Ads (AdServices), sin IDFA ni seguimiento entre apps.</li>
+          <li>Desde la zona para adultos se puede preparar una solicitud de borrado del perfil técnico de compras.</li>
+          <li>La zona para adultos y las compras están protegidas por una comprobación parental.</li>
+        </ul>
+      </div>
+
+      <nav class="toc" aria-label="Índice">
+        <h2>Índice</h2>
+        <ol>
+          <li><a href="#s1"><span>¿Quiénes somos?</span></a></li>
+          <li><a href="#s2"><span>Ámbito y usuarios</span></a></li>
+          <li><a href="#s3"><span>Datos que no pedimos</span></a></li>
+          <li><a href="#s4"><span>Datos que se guardan en el dispositivo</span></a></li>
+          <li><a href="#s5"><span>Terceros y servicios externos</span></a></li>
+          <li><a href="#s6"><span>Voz, sonido e ilustraciones generados con IA</span></a></li>
+          <li><a href="#s7"><span>Control parental</span></a></li>
+          <li><a href="#s8"><span>Compras: modelo freemium</span></a></li>
+          <li><a href="#s9"><span>Menores de 13 años (COPPA, EE. UU.)</span></a></li>
+          <li><a href="#s10"><span>Menores en la Unión Europea (RGPD)</span></a></li>
+          <li><a href="#s11"><span>Derechos de padres y tutores</span></a></li>
+          <li><a href="#s12"><span>Seguridad</span></a></li>
+          <li><a href="#s13"><span>Cambios en esta política</span></a></li>
+          <li><a href="#s14"><span>Contacto</span></a></li>
+        </ol>
+      </nav>
+
+      <section class="doc-section" id="s1">
+        <h2><span class="num">1</span> ¿Quiénes somos?</h2>
+        <p><strong>Responsable del tratamiento:</strong> Elrond2, desarrollador independiente. Correo de contacto: <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>.</p>
+        <p><strong>Aplicación:</strong> Mundo Tuni: Aprende Jugando<br />
+           <strong>Bundle ID:</strong> es.mundotuni.tuni<br />
+           <strong>Plataformas:</strong> iOS (App Store) y Android (Google Play)</p>
+        <p>Esta política explica qué datos intervienen en el uso de la app. <strong>Mundo Tuni no pide el nombre, la fecha de nacimiento ni una cuenta del niño.</strong> Solo pregunta, de forma opcional, su edad aproximada para elegir una franja de dificultad (2–3 o 3–4 años), que se guarda en el dispositivo (sección 4). El progreso educativo también se guarda en el dispositivo. Para el acceso premium, el SDK de RevenueCat se inicia al abrir la app y usa un identificador técnico seudónimo; al comprar o restaurar trata además la información de la transacción que facilitan Apple o Google. En iOS, AdServices permite atribuir instalaciones o compras a Apple Ads. Todo ello se detalla en las secciones 5 y 8.</p>
+      </section>
+
+      <section class="doc-section" id="s2">
+        <h2><span class="num">2</span> Ámbito y usuarios</h2>
+        <p>Mundo Tuni: Aprende Jugando es una <strong>aplicación educativa para niñas y niños de 2 a 4 años</strong>, pensada para usarse con la supervisión de un padre, madre o tutor legal («tutor»).</p>
+        <p>Está diseñada desde el principio para proteger la privacidad de los menores: no requiere registro ni pide información que identifique al niño. La única pregunta sobre el niño es su edad aproximada, que se guarda como franja y no sale del dispositivo. El juego y el contenido educativo funcionan sin conexión. Las funciones de compra, restauración y atribución descritas en esta política sí se conectan a servicios externos cuando hay red.</p>
+      </section>
+
+      <section class="doc-section" id="s3">
+        <h2><span class="num">3</span> Datos que no pedimos</h2>
+        <p>La app <strong>no pide al niño ni al adulto</strong> ninguno de estos datos:</p>
+        <ul>
+          <li>Nombre ni apellidos.</li>
+          <li>Correo electrónico ni número de teléfono.</li>
+          <li>Ubicación precisa (GPS).</li>
+          <li>Identificadores publicitarios IDFA o GAID.</li>
+          <li>Datos biométricos, de salud ni fotografías.</li>
+          <li>Contactos del dispositivo.</li>
+          <li>Cámara ni micrófono.</li>
+          <li>Historial de navegación ni uso de otras apps.</li>
+          <li>Datos de pago ni información bancaria.</li>
+        </ul>
+        <p>La única pregunta sobre el niño es su <strong>edad aproximada</strong>, que la app hace al adulto en la presentación inicial y que se puede saltar. No se guarda la edad exacta ni la fecha de nacimiento, sino una franja (2–3 o 3–4 años), y solo en el dispositivo (sección 4).</p>
+        <p>Si nos escribes para pedir ayuda, enviar una sugerencia o ejercer un derecho, trataremos tu dirección de correo y el contenido del mensaje para responderte (sección 10).</p>
+        <div class="callout callout-success gummy">
+          <strong>Sin cuentas y sin publicidad.</strong>
+          El contenido educativo no necesita conexión. Mundo Tuni no tiene un servidor propio para el progreso: usa RevenueCat, Apple y Google para las compras y, en iOS, AdServices para la atribución de Apple Ads.
+        </div>
+      </section>
+
+      <section class="doc-section" id="s4">
+        <h2><span class="num">4</span> Datos que se guardan en el dispositivo</h2>
+        <p>La app guarda información para funcionar <strong>en el almacenamiento local del dispositivo</strong> (<code>SharedPreferences</code> y almacenamiento propio de la app). Estos datos no se envían al desarrollador ni a RevenueCat. Al desinstalar la app se borran, aunque las copias de seguridad del sistema operativo pueden conservarlos si así lo tienes configurado.</p>
+
+        <div class="table-wrapper">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th scope="col">Dato</th>
+                <th scope="col">Para qué</th>
+                <th scope="col">Tipo</th>
+                <th scope="col">Dónde</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Progreso educativo<br /><small>(actividades, estrellas y adaptación de la dificultad)</small></td>
+                <td>Recordar el avance y adaptar la experiencia</td>
+                <td>Estado local, sin nombre ni cuenta</td>
+                <td><span class="badge">Solo local</span></td>
+              </tr>
+              <tr>
+                <td>Franja de edad<br /><small>(2–3 o 3–4 años; se elige en la presentación inicial)</small></td>
+                <td>Ajustar la dificultad de las actividades (por ejemplo, contar hasta 5 o hasta 10). Si se salta la pregunta, se usa la franja 3–4</td>
+                <td>Valor aproximado, sin edad exacta ni fecha de nacimiento</td>
+                <td><span class="badge">Solo local</span></td>
+              </tr>
+              <tr>
+                <td>Preferencias<br /><small>(sonido, idioma, accesibilidad y recordatorios)</small></td>
+                <td>Conservar la configuración elegida por la familia</td>
+                <td>Preferencias locales</td>
+                <td><span class="badge">Solo local</span></td>
+              </tr>
+              <tr>
+                <td>Pegatinas, racha y presentación inicial</td>
+                <td>Mantener las recompensas y no repetir la presentación</td>
+                <td>Estado local, sin cuenta</td>
+                <td><span class="badge">Solo local</span></td>
+              </tr>
+              <tr>
+                <td>Contadores de uso</td>
+                <td>Mostrar al adulto cuántas veces se han hecho ciertas acciones (por ejemplo, abrir la pantalla de compra) y decidir cuándo sugerir una valoración. El adulto puede copiar un informe desde la zona para adultos; la app no lo envía</td>
+                <td>Contadores y fechas por tipo de acción</td>
+                <td><span class="badge">Solo local</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-info gummy">
+          <strong>Estos datos se quedan en el dispositivo.</strong>
+          No contienen el nombre ni una cuenta del niño y no se vinculan al perfil técnico de compras de RevenueCat. La app no transmite la franja de edad ni el progreso a RevenueCat, a Apple, a Google ni a ningún otro servicio. Solo las copias de seguridad del sistema, si las tienes activadas, pueden incluir los datos locales.
+        </div>
+
+        <p><strong>Recordatorios.</strong> Si el adulto los activa en la zona para adultos, la app pide permiso de notificaciones al sistema y programa un recordatorio diario como notificación local del propio dispositivo. No pasa por ningún servidor.</p>
+
+        <h3>Cómo borrar estos datos</h3>
+        <ul>
+          <li><strong>Desde la zona para adultos:</strong> se pueden reiniciar por separado el progreso, las pegatinas y los contadores. La franja de edad y las preferencias no se borran desde aquí.</li>
+          <li><strong>Desinstalando la app:</strong> se borra todo su almacenamiento local, incluidas la franja de edad y las preferencias, salvo lo que conserven las copias de seguridad del sistema operativo.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section" id="s5">
+        <h2><span class="num">5</span> Terceros y servicios externos</h2>
+        <p>Mundo Tuni no incluye publicidad, redes sociales ni analítica del comportamiento del niño. Sí usa RevenueCat para las compras y, en iOS, la atribución de Apple Ads mediante AdServices. En concreto:</p>
+        <ul>
+          <li><strong>Sin publicidad:</strong> no hay anuncios de ningún tipo.</li>
+          <li><strong>Sin analítica del comportamiento:</strong> no se usa Google Analytics, Firebase Analytics, Mixpanel, Amplitude ni herramientas similares para observar al niño.</li>
+          <li><strong>Sin seguimiento entre apps:</strong> no se usa IDFA ni GAID, y la configuración de RevenueCat desactiva la recogida automática de identificadores del dispositivo.</li>
+          <li><strong>Sin redes sociales:</strong> no hay botones de compartir ni inicio de sesión con otras plataformas.</li>
+          <li><strong>Sin servidor propio:</strong> el desarrollador no tiene servidores, bases de datos ni servicios en la nube para el progreso del juego.</li>
+        </ul>
+
+        <h3>RevenueCat (gestión de compras)</h3>
+        <p>Las compras se gestionan con el SDK de <strong>RevenueCat</strong> (RevenueCat, Inc., EE. UU.), que actúa como encargado del tratamiento. El SDK se inicia al abrir la app para comprobar si hay acceso premium y cargar las opciones de compra. Para ello usa un <strong>identificador técnico seudónimo</strong>: un código aleatorio que genera el propio SDK y que no contiene el nombre ni el correo de nadie. RevenueCat puede recibir además los metadatos técnicos necesarios para prestar el servicio, como la versión de la app y del sistema operativo o la dirección IP de la conexión. Al comprar o restaurar, recibe también la información de la transacción que facilitan Apple o Google.</p>
+        <p>La app no asigna a ese perfil el nombre ni el correo del adulto ni ningún dato del niño, y desactiva expresamente la recogida automática de identificadores del dispositivo. La app tampoco envía a RevenueCat un evento personalizado de impresión del paywall: el contador de aperturas de la pantalla de compra se queda en el dispositivo.</p>
+        <p>RevenueCat guarda los datos en servidores de EE. UU. Esa transferencia se ampara en las Cláusulas Contractuales Tipo de la Comisión Europea, incluidas en su <a href="https://www.revenuecat.com/dpa" target="_blank" rel="noopener">acuerdo de encargo del tratamiento</a>. Puedes pedirnos información sobre estas garantías, y una copia, en <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>. Más información en la <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">política de privacidad de RevenueCat</a>.</p>
+
+        <h3>Atribución de Apple Ads (solo iOS)</h3>
+        <p>En iOS, el SDK de RevenueCat obtiene el token de atribución que Apple facilita mediante AdServices y lo envía a RevenueCat, que pregunta a Apple si la instalación procede de una campaña de Apple Ads. Si es así, RevenueCat guarda en el perfil técnico los datos de campaña que devuelve Apple (campaña, grupo de anuncios, palabra clave y tipo de atribución). Los usamos solo para medir, de forma agregada, qué campañas funcionan. Es la atribución estándar de Apple: no usa IDFA, no necesita el permiso de seguimiento (ATT), no permite seguir a nadie entre apps o sitios web y no incluye el nombre, la franja de edad ni el progreso del niño.</p>
+
+        <h3>Solicitud de borrado del perfil técnico de compras</h3>
+        <p>Desde la zona para adultos se puede preparar un correo a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a> para pedir el borrado del perfil técnico de RevenueCat. Solo cuando el adulto lo confirma, la app obtiene el identificador técnico y lo incluye en el borrador. La app no copia ese identificador en registros ni en su propio almacenamiento, y no envía el correo por su cuenta: lo envía el adulto si quiere.</p>
+        <p>Borrar ese perfil no borra el progreso local ni cancela, reembolsa o elimina la compra hecha en Apple o Google. Después puede hacer falta usar «Restaurar compras» para recuperar el acceso premium.</p>
+
+        <h3>Valoraciones en la tienda</h3>
+        <p>Al entrar en la zona para adultos, la app puede pedir al sistema que muestre el diálogo de valoración de Apple o Google, y desde esa zona también se puede abrir la página de la tienda para escribir una reseña. La valoración la gestiona la tienda: la app no recibe la puntuación ni datos de la cuenta.</p>
+
+        <h3>Esta página web</h3>
+        <p>Esta web se aloja en GitHub Pages (GitHub, Inc., EE. UU.). GitHub registra la dirección IP de quien la visita por motivos de seguridad, según su <a href="https://docs.github.com/es/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener">declaración de privacidad</a>. La web no usa cookies ni analítica, y sus fuentes e imágenes se sirven desde la propia web.</p>
+
+        <div class="callout callout-info gummy">
+          <strong>App Store y Google Play.</strong>
+          Apple y Google pueden recoger estadísticas de descarga y de rendimiento de la app según sus propias políticas de privacidad, sobre las que no tenemos control. Estas operaciones son independientes del funcionamiento de la app.
+        </div>
+      </section>
+
+      <section class="doc-section" id="s6">
+        <h2><span class="num">6</span> Voz, sonido e ilustraciones generados con IA</h2>
+        <p>Las locuciones de Tuni, los efectos de sonido y la música de fondo de la app se han generado con herramientas de inteligencia artificial, igual que las ilustraciones.</p>
+        <div class="callout callout-info gummy">
+          <strong>Herramientas y licencias.</strong>
+          La voz de Tuni, los efectos de sonido y la música se han generado con <strong>ElevenLabs</strong> (síntesis de voz, ElevenLabs Sound Effects y ElevenLabs Music), con la licencia comercial del plan Starter. Las ilustraciones (logotipo, iconos, fondos, pegatinas, criaturas y dibujos de palabras) se han creado con <strong>ChatGPT</strong>. Los créditos completos están en la pantalla «Créditos» de la zona para adultos.
+        </div>
+        <p>Todo este contenido se generó durante el desarrollo y viaja dentro de la app. La app no graba ni procesa la voz, la imagen ni los sonidos del usuario o del niño, y no envía datos a ElevenLabs ni a OpenAI.</p>
+      </section>
+
+      <section class="doc-section" id="s7">
+        <h2><span class="num">7</span> Control parental</h2>
+        <p>La zona para adultos y el acceso a la compra están protegidos por una <strong>comprobación parental</strong>: una suma sencilla que dificulta que un niño pequeño entre en los ajustes, las compras y los enlaces que salen de la app (esta política, el soporte y el correo). Aun así, recomendamos que un adulto supervise el uso de la app.</p>
+        <p>La comprobación:</p>
+        <ul>
+          <li>Se resuelve por completo en el dispositivo, sin conexión.</li>
+          <li>No guarda ningún registro de accesos.</li>
+          <li>No pide contraseña, PIN ni ningún dato personal.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section" id="s8">
+        <h2><span class="num">8</span> Compras: modelo freemium</h2>
+        <p>Parte del contenido es gratuito y el resto se desbloquea con una <strong>compra única</strong> de acceso premium.</p>
+        <p>Las compras se hacen solo con los sistemas de pago oficiales de <strong>Apple (App Store)</strong> y <strong>Google (Google Play)</strong>. El pago lo procesa la tienda: el desarrollador no recibe datos de tarjeta ni información bancaria.</p>
+        <p>Para consultar, validar y restaurar el acceso premium, la app usa RevenueCat (sección 5), con un identificador técnico seudónimo y, cuando hay una transacción, con la información de compra que facilita la tienda.</p>
+        <p>La pantalla de compra siempre está detrás de la comprobación parental, como exigen las normas de las tiendas para apps infantiles.</p>
+      </section>
+
+      <section class="doc-section" id="s9">
+        <h2><span class="num">9</span> Menores de 13 años (COPPA, EE. UU.)</h2>
+        <p>La <em>Children's Online Privacy Protection Act</em> (COPPA) exige a los servicios en línea dirigidos a menores de 13 años obtener el consentimiento verificable de los padres antes de recoger información personal de esos menores.</p>
+        <h3>Cómo trata Mundo Tuni los datos de menores</h3>
+        <p>Mundo Tuni <strong>no pide el nombre, la fecha de nacimiento, el correo ni una cuenta del menor</strong>. Solo pregunta al adulto, de forma opcional, la edad aproximada del niño, que se guarda como franja en el dispositivo para ajustar la dificultad. El progreso y esa franja se quedan en el dispositivo. RevenueCat se inicia para consultar el acceso premium y las opciones de compra con un identificador técnico seudónimo; comprar exige una acción de un adulto tras la comprobación parental. En iOS, AdServices aporta la atribución de Apple Ads descrita en la sección 5.</p>
+        <ul>
+          <li>La app no pide el nombre, la fecha de nacimiento ni el correo del niño.</li>
+          <li>La franja de edad (2–3 o 3–4 años) se guarda solo en el dispositivo y la app no la envía a ningún servicio.</li>
+          <li>No hay registro de usuarios ni perfiles con datos personales.</li>
+          <li>No hay publicidad de ningún tipo.</li>
+          <li>No se usa la geolocalización.</li>
+          <li>El perfil técnico de compras no recibe la franja de edad, el progreso ni otras actividades del niño.</li>
+        </ul>
+      </section>
+
+      <section class="doc-section" id="s10">
+        <h2><span class="num">10</span> Menores en la Unión Europea (RGPD)</h2>
+        <p>El Reglamento General de Protección de Datos (RGPD, Reglamento UE 2016/679) protege de forma reforzada los datos de los menores.</p>
+
+        <h3>Qué tratamos y con qué base jurídica</h3>
+        <ul>
+          <li><strong>Datos que se quedan en el dispositivo</strong> (progreso, franja de edad, preferencias y contadores): no los recibimos. La app los usa en el propio dispositivo para funcionar.</li>
+          <li><strong>Compras y restauración:</strong> ejecución del contrato de compra que solicita el adulto (art. 6.1.b RGPD).</li>
+          <li><strong>Comprobar al abrir la app si hay una compra, tener lista la oferta de compra y medir las campañas de Apple Ads en iOS:</strong> interés legítimo (art. 6.1.f RGPD) en mantener el acceso comprado sin pedir nada al adulto, en poder ofrecer la compra y en saber qué campañas funcionan, con datos seudónimos, sin IDFA y sin el nombre, la franja de edad ni el progreso del niño. Puedes oponerte escribiendo a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>.</li>
+          <li><strong>Atender las solicitudes de ejercicio de derechos:</strong> cumplimiento de una obligación legal (art. 6.1.c RGPD).</li>
+          <li><strong>Responder a consultas de soporte y sugerencias:</strong> interés legítimo (art. 6.1.f RGPD) en contestar a quien nos escribe.</li>
+        </ul>
+        <p>Sin conexión, o sin una cuenta de Apple o Google, no se puede comprar ni restaurar la compra; el resto de la app funciona igual.</p>
+
+        <h3>Cuánto tiempo se conservan</h3>
+        <p>Los datos locales, hasta que desinstales la app; el progreso, las pegatinas y los contadores, también hasta que los reinicies desde la zona para adultos (sección 4). El perfil técnico de RevenueCat, mientras la app ofrezca compras y sea necesario para restaurarlas, o hasta que pidas su borrado; tras una solicitud de supresión borraremos lo que proceda, salvo lo que debamos conservar por obligación legal (sección 5). Los correos de soporte y de ejercicio de derechos, el tiempo necesario para atenderlos y, en el caso de los derechos, para poder acreditar que se atendieron.</p>
+
+        <h3>Privacidad desde el diseño</h3>
+        <ul>
+          <li><strong>Minimización:</strong> el progreso y la franja de edad se quedan en el dispositivo; RevenueCat tiene desactivada la recogida automática de identificadores, y la app solo lee el identificador técnico cuando el adulto prepara una solicitud de borrado.</li>
+          <li><strong>Limitación de la finalidad:</strong> los datos locales solo se usan para aquello para lo que se guardan.</li>
+          <li><strong>Confidencialidad:</strong> los únicos flujos externos son los de compra y atribución descritos en la sección 5.</li>
+        </ul>
+
+        <h3>Transferencias internacionales</h3>
+        <p>Los datos que trata RevenueCat se guardan en <strong>Estados Unidos</strong>, con las garantías descritas en la sección 5 (Cláusulas Contractuales Tipo). No hacemos otras transferencias internacionales de datos personales.</p>
+
+        <h3>Delegado de Protección de Datos</h3>
+        <p>No hemos designado un Delegado de Protección de Datos. Para cualquier consulta sobre protección de datos, escríbenos a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>.</p>
+      </section>
+
+      <section class="doc-section" id="s11">
+        <h2><span class="num">11</span> Derechos de padres y tutores</h2>
+        <p>Puedes ejercer estos derechos escribiendo a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>. Para localizar el perfil técnico de compras, usa la solicitud que prepara la zona para adultos (sección 5).</p>
+        <ul>
+          <li><strong>Acceso:</strong> saber qué información se trata en relación con el uso de la app.</li>
+          <li><strong>Supresión:</strong> pedir el borrado del perfil técnico de RevenueCat. Desinstalar la app solo borra el almacenamiento local y no sustituye esta solicitud.</li>
+          <li><strong>Rectificación:</strong> corregir cualquier dato inexacto.</li>
+          <li><strong>Oposición y limitación:</strong> oponerte al tratamiento basado en el interés legítimo o pedir que se limite.</li>
+          <li><strong>Portabilidad:</strong> recibir los datos en un formato estructurado.</li>
+          <li><strong>Reclamación:</strong> ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a>) o ante la autoridad de control de tu país de la UE.</li>
+        </ul>
+        <p>Respondemos en el plazo máximo de <strong>un mes</strong> desde que recibimos la solicitud.</p>
+      </section>
+
+      <section class="doc-section" id="s12">
+        <h2><span class="num">12</span> Seguridad</h2>
+        <ul>
+          <li>Los datos locales están en el almacenamiento privado de la app, al que no acceden otras apps del dispositivo.</li>
+          <li>Las conexiones de compra y atribución van cifradas, con los mecanismos de los servicios descritos en la sección 5.</li>
+          <li>La zona para adultos está protegida por la comprobación parental de la sección 7.</li>
+        </ul>
+        <p>La seguridad del dispositivo (código de bloqueo, actualizaciones del sistema, etc.) depende de quien lo administra.</p>
+      </section>
+
+      <section class="doc-section" id="s13">
+        <h2><span class="num">13</span> Cambios en esta política</h2>
+        <p>Esta política puede cambiar para reflejar cambios en la app o en la normativa. Cuando cambie:</p>
+        <ul>
+          <li>Actualizaremos la versión y la fecha que aparecen al principio y al final de este documento.</li>
+          <li>Si un cambio exige tu consentimiento, te lo pediremos antes de aplicarlo.</li>
+        </ul>
+        <p><strong>Cambios en la versión 1.3 (24 de septiembre de 2026), respecto a la 1.1:</strong> se explica la pregunta opcional por la edad aproximada del niño, que se guarda como franja solo en el dispositivo; se detalla que RevenueCat se inicia al abrir la app con un identificador técnico seudónimo, la atribución de Apple Ads mediante AdServices sin IDFA, los recordatorios, las valoraciones en la tienda, la solicitud de borrado desde la zona para adultos y el tratamiento de los correos y de las visitas a esta web; se indican las bases jurídicas, los plazos de conservación y la garantía de las transferencias a EE. UU. (Cláusulas Contractuales Tipo); y se sustituye la nota de licencias por las herramientas usadas (ElevenLabs para voz, efectos y música; ChatGPT para las ilustraciones).</p>
+      </section>
+
+      <section class="doc-section" id="s14">
+        <h2><span class="num">14</span> Contacto</h2>
+        <p>Para cualquier pregunta o solicitud sobre esta política o sobre los datos de la app:</p>
+        <div class="contact-box gummy">
+          <p><strong>Elrond2</strong>, desarrollador de Mundo Tuni: Aprende Jugando</p>
+          <p><a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a></p>
+          <p><small>Respuesta habitual: 2–5 días laborables. Plazo máximo: un mes.</small></p>
+        </div>
+      </section>
+
+      <footer class="doc-footer">
+        <p><strong>Mundo Tuni: Aprende Jugando</strong> · Bundle ID: es.mundotuni.tuni</p>
+        <p>Versión de esta política: <strong>1.3</strong> · Última actualización: <strong>24 de septiembre de 2026</strong></p>
+        <p>© 2026 Elrond2. Todos los derechos reservados.</p>
+      </footer>
+
     </div>
-    <p class="doc-title">Política de Privacidad</p>
-  </div>
-</header>
-
-<div class="wrapper">
-
-  <!-- ── Language note ── -->
-  <p class="lang-note">
-    🌐 Este documento está redactado en español (es-ES) como idioma principal. Si deseas una versión en inglés, escríbenos a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a> y te la facilitamos sin coste.
-  </p>
-
-  <!-- ── Summary bar ── -->
-  <div class="summary-bar">
-    <h2>Resumen rápido — Lo más importante</h2>
-    <ul class="check-list">
-      <li>No solicitamos nombre, fecha de nacimiento, cuenta, ubicación ni otros datos personales del niño.</li>
-      <li>Al empezar, la app pregunta al adulto la edad aproximada del niño (se puede saltar) y guarda solo una franja (2–3 o 3–4 años) en el dispositivo para ajustar la dificultad. No se envía a nadie.</li>
-      <li>No hay publicidad ni analítica del comportamiento del niño.</li>
-      <li>El progreso, las preferencias y los contadores de uso se guardan localmente en el dispositivo.</li>
-      <li>RevenueCat gestiona el estado de compra mediante un perfil técnico anónimo; la recogida automática de identificadores de dispositivo está desactivada.</li>
-      <li>En iOS se conserva la atribución de Apple Ads mediante AdServices, sin IDFA ni seguimiento entre apps.</li>
-      <li>La zona para adultos permite preparar una solicitud manual de borrado del perfil técnico de RevenueCat.</li>
-      <li>La sección de ajustes está protegida por una comprobación parental.</li>
-    </ul>
-  </div>
-
-  <!-- ══ TOC ══════════════════════════════════════════════════════════ -->
-  <nav class="toc" aria-label="Índice de contenidos">
-    <h2>Índice</h2>
-    <ol>
-      <li><a href="#s1">¿Quiénes somos?</a></li>
-      <li><a href="#s2">Ámbito y usuarios destinatarios</a></li>
-      <li><a href="#s3">Datos que NO recogemos</a></li>
-      <li><a href="#s4">Datos que se almacenan localmente</a></li>
-      <li><a href="#s5">Terceros y servicios externos</a></li>
-      <li><a href="#s6">Voz, sonido e ilustraciones generados con Inteligencia Artificial</a></li>
-      <li><a href="#s7">Control parental y acceso a ajustes</a></li>
-      <li><a href="#s8">Modelo de monetización freemium</a></li>
-      <li><a href="#s9">Menores de 13 años — COPPA (EE. UU.)</a></li>
-      <li><a href="#s10">Menores en la Unión Europea — RGPD y GDPR-K</a></li>
-      <li><a href="#s11">Derechos de padres y tutores</a></li>
-      <li><a href="#s12">Seguridad</a></li>
-      <li><a href="#s13">Cambios en esta política</a></li>
-      <li><a href="#s14">Contacto</a></li>
-    </ol>
-  </nav>
-
-  <!-- ══ SECCIÓN 1 ════════════════════════════════════════════════════ -->
-  <section id="s1">
-    <h2><span class="section-icon">🏢</span> 1. ¿Quiénes somos?</h2>
-    <p><strong>Responsable del tratamiento:</strong> Elrond2, desarrollador independiente, con correo electrónico de contacto <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>.</p>
-    <p><strong>Nombre de la aplicación:</strong> Mundo Tuni: Aprende Jugando<br>
-       <strong>Bundle ID:</strong> es.mundotuni.tuni<br>
-       <strong>Plataformas:</strong> iOS (App Store) y Android (Google Play)</p>
-    <p>Esta política describe cómo funciona la aplicación en relación con los datos de sus usuarios. <strong>Mundo Tuni no solicita datos personales del niño</strong> (nombre, fecha de nacimiento, cuenta, etc.). Solo pregunta, de forma opcional, su edad aproximada para elegir una franja de dificultad (2–3 o 3–4 años), que se guarda en el dispositivo (sección 4). El progreso educativo se almacena localmente. Para gestionar el acceso premium, el SDK de RevenueCat se inicializa al abrir la app y usa un perfil técnico anónimo; durante una compra o restauración también trata la información de la transacción facilitada por Apple o Google. En iOS, AdServices permite atribuir instalaciones o compras a Apple Ads. Estos flujos se detallan en las secciones 5 y 8.</p>
-  </section>
-
-  <!-- ══ SECCIÓN 2 ════════════════════════════════════════════════════ -->
-  <section id="s2">
-    <h2><span class="section-icon">👶</span> 2. Ámbito y usuarios destinatarios</h2>
-    <p>Mundo Tuni: Aprende Jugando es una <strong>aplicación educativa para niñas y niños de 2 a 4 años</strong>. El uso de la app está destinado a ser supervisado por un padre, madre o tutor legal («tutor»). No está pensada para ser usada de forma autónoma por menores sin supervisión adulta.</p>
-    <p>La aplicación está diseñada desde su origen con la filosofía de <em>privacy by design</em> orientada a los menores: no requiere registro ni solicita información que identifique al niño. La única pregunta sobre el niño es su edad aproximada, que se guarda como franja y no sale del dispositivo. El juego y el contenido educativo principal funcionan sin conexión. Las funciones de compra, restauración y atribución descritas en esta política sí pueden conectarse a servicios externos.</p>
-  </section>
-
-  <!-- ══ SECCIÓN 3 ════════════════════════════════════════════════════ -->
-  <section id="s3">
-    <h2><span class="section-icon">🚫</span> 3. Datos que NO recogemos</h2>
-    <p>Mundo Tuni <strong>no solicita al niño ni al tutor</strong> los siguientes datos para jugar:</p>
-    <ul>
-      <li>Nombre, apellidos ni ningún identificador personal.</li>
-      <li>Dirección de correo electrónico ni número de teléfono.</li>
-      <li>Ubicación geográfica precisa mediante GPS.</li>
-      <li>Identificadores publicitarios IDFA o GAID.</li>
-      <li>Datos biométricos, de salud ni fotografías.</li>
-      <li>Información de contactos del dispositivo.</li>
-      <li>Datos de cámara ni micrófono.</li>
-      <li>Historial de navegación ni uso de otras apps.</li>
-      <li>Datos de pago ni información bancaria.</li>
-    </ul>
-    <p>La única pregunta sobre el niño es su <strong>edad aproximada</strong>, que la app hace al adulto en la presentación inicial y que se puede saltar. No se guarda la edad exacta ni la fecha de nacimiento, sino una franja (2–3 o 3–4 años), solo en el dispositivo (ver sección 4).</p>
-    <div class="callout callout-success">
-      <strong>Sin cuenta infantil y sin publicidad.</strong>
-      El contenido educativo principal no requiere conexión. Mundo Tuni no mantiene un backend propio para el progreso, pero usa RevenueCat, Apple y Google para las funciones de compra y, en iOS, AdServices para atribución de Apple Ads.
-    </div>
-  </section>
-
-  <!-- ══ SECCIÓN 4 ════════════════════════════════════════════════════ -->
-  <section id="s4">
-    <h2><span class="section-icon">💾</span> 4. Datos que se almacenan localmente</h2>
-    <p>La app guarda información funcional <strong>en el almacenamiento local del dispositivo</strong> (mediante <code>SharedPreferences</code> y almacenamiento propio de la app). Estos datos locales no se envían al desarrollador ni a RevenueCat. Su eliminación al desinstalar puede depender de las funciones de copia o restauración del sistema operativo.</p>
-
-    <div class="table-wrapper">
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Dato almacenado</th>
-            <th>Finalidad</th>
-            <th>Tipo</th>
-            <th>Destino</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Progreso educativo<br><small>(actividades, estrellas y adaptación local)</small></td>
-            <td>Recordar el avance y adaptar la experiencia en el dispositivo</td>
-            <td>Estado local sin nombre ni cuenta</td>
-            <td><span class="badge badge-local">Solo local</span></td>
-          </tr>
-          <tr>
-            <td>Franja de edad<br><small>(2–3 o 3–4 años; se elige en la presentación inicial)</small></td>
-            <td>Ajustar la dificultad de las actividades (por ejemplo, contar hasta 5 o hasta 10). Si se salta la pregunta, se usa la franja 3–4</td>
-            <td>Valor aproximado, sin edad exacta ni fecha de nacimiento</td>
-            <td><span class="badge badge-local">Solo local</span></td>
-          </tr>
-          <tr>
-            <td>Preferencias<br><small>(sonido, idioma, accesibilidad y recordatorios)</small></td>
-            <td>Conservar la configuración elegida por la familia</td>
-            <td>Preferencias locales</td>
-            <td><span class="badge badge-local">Solo local</span></td>
-          </tr>
-          <tr>
-            <td>Coleccionables, racha y onboarding</td>
-            <td>Mantener recompensas y evitar repetir la introducción</td>
-            <td>Estado local sin cuenta</td>
-            <td><span class="badge badge-local">Solo local</span></td>
-          </tr>
-          <tr>
-            <td>Diagnóstico de conversión</td>
-            <td>Mostrar al adulto contadores agregados de acciones de la app</td>
-            <td>Contadores y una fecha por tipo de evento</td>
-            <td><span class="badge badge-local">Solo local</span></td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="callout callout-info">
-      <strong>Estos datos educativos permanecen locales.</strong>
-      No contienen nombre ni cuenta del niño y no se vinculan al perfil técnico de compras de RevenueCat. La franja de edad tampoco se envía a RevenueCat, a Apple, a Google ni a ningún otro servicio.
-    </div>
-
-    <p><strong>Recordatorios.</strong> Si el adulto los activa en la zona para adultos, la app pide permiso de notificaciones al sistema y programa un recordatorio diario como notificación local en el propio dispositivo. No pasa por ningún servidor.</p>
-
-    <h3>¿Cómo borrar estos datos?</h3>
-    <p>Estos datos locales se pueden borrar así:</p>
-    <ul>
-      <li><strong>Desde la zona para adultos:</strong> se pueden reiniciar por separado el progreso, las pegatinas y los contadores de diagnóstico. La franja de edad y las preferencias no se borran desde aquí.</li>
-      <li><strong>Desinstalando la app:</strong> se elimina todo su almacenamiento local del dispositivo, incluidas la franja de edad y las preferencias, sujeto al comportamiento de copia y restauración del sistema operativo.</li>
-    </ul>
-  </section>
-
-  <!-- ══ SECCIÓN 5 ════════════════════════════════════════════════════ -->
-  <section id="s5">
-    <h2><span class="section-icon">🔌</span> 5. Terceros y servicios externos</h2>
-    <p>Mundo Tuni no integra publicidad, redes sociales ni analítica del comportamiento del niño. Sí integra RevenueCat para las compras y, en iOS, la atribución de Apple Ads mediante AdServices. En concreto:</p>
-    <ul>
-      <li><strong>Sin publicidad:</strong> no hay anuncios de ningún tipo (display, vídeo, nativa, etc.).</li>
-      <li><strong>Sin analítica comportamental:</strong> no se usa Google Analytics, Firebase Analytics, Mixpanel, Amplitude ni herramienta similar para observar al niño.</li>
-      <li><strong>Sin seguimiento entre apps:</strong> no se usa IDFA ni GAID y la configuración de RevenueCat desactiva la recogida automática de identificadores de dispositivo.</li>
-      <li><strong>Sin redes sociales:</strong> no hay botones de compartir, inicio de sesión social ni integración con plataformas de terceros.</li>
-      <li><strong>Sin servicios de backend propio:</strong> no existe ningún servidor, base de datos ni servicio en la nube gestionado por el desarrollador para el progreso del juego.</li>
-    </ul>
-
-    <h3>RevenueCat (gestión de compras)</h3>
-    <p>
-      La gestión técnica del estado de las compras se realiza mediante
-      <strong>RevenueCat SDK</strong>. El SDK se inicializa al abrir la app para cargar
-      el estado premium y las opciones disponibles. RevenueCat usa un
-      <strong>identificador técnico anónimo</strong> generado por el SDK y puede recibir
-      metadatos técnicos necesarios para prestar el servicio. Al comprar o restaurar,
-      también recibe la información de la transacción proporcionada por Apple o Google.
-      La app no asigna a ese perfil el nombre, correo del adulto ni datos del niño, y
-      desactiva expresamente la recogida automática de identificadores de dispositivo.
-      Estos datos pueden transferirse a EE. UU. al
-      amparo de las Cláusulas Contractuales Tipo (SCC) y del
-      Data Privacy Framework de RevenueCat. Para más información, consulta la
-      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">
-      política de privacidad de RevenueCat</a>.
-    </p>
-
-    <p>Mundo Tuni mantiene un contador local de aperturas del paywall. Este contador permanece en el dispositivo; la app no envía a RevenueCat un evento personalizado de impresión del paywall.</p>
-
-    <h3>AdServices y atribución de Apple Ads (solo iOS)</h3>
-    <p>En iOS, RevenueCat puede recoger el token de atribución que facilita Apple mediante AdServices. Se usa para saber de forma agregada si una instalación o compra procede de una campaña de Apple Ads y evaluar su rendimiento. Este flujo no usa IDFA, no habilita seguimiento entre aplicaciones o sitios web y no incluye datos del niño.</p>
-
-    <h3>Solicitud de borrado del perfil técnico de compras</h3>
-    <p>Desde la zona para adultos se puede preparar un correo a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a> para solicitar el borrado del perfil técnico de RevenueCat. Solo después de que el adulto confirme, la app obtiene el identificador técnico y lo incluye en el borrador. La app no copia ese identificador a logs ni a SharedPreferences propios de Mundo Tuni; RevenueCat mantiene su identificador técnico para prestar el servicio. La app no envía el correo automáticamente.</p>
-    <p>El borrado del perfil de RevenueCat no borra el progreso local ni cancela, reembolsa o elimina la compra gestionada por Apple o Google. Tras la tramitación puede ser necesario usar «Restaurar compras» para recuperar el acceso premium.</p>
-
-    <div class="callout callout-success">
-      <strong>App Store / Google Play.</strong>
-      Las plataformas de distribución (Apple App Store y Google Play) pueden recoger estadísticas de descarga y métricas de rendimiento de la app de conformidad con sus propias políticas de privacidad, sobre las que no tenemos control. Estas operaciones son independientes del funcionamiento de la app y son gestionadas directamente por Apple y Google.
-    </div>
-  </section>
-
-  <!-- ══ SECCIÓN 6 ════════════════════════════════════════════════════ -->
-  <section id="s6">
-    <h2><span class="section-icon">🎙️</span> 6. Voz, sonido e ilustraciones generados con Inteligencia Artificial</h2>
-    <p>Las locuciones del personaje Tuni, los efectos de sonido y la música de fondo incluidos en la aplicación se han generado con herramientas de Inteligencia Artificial, igual que las ilustraciones.</p>
-    <div class="callout callout-info">
-      <strong>Herramientas y licencias.</strong>
-      La voz de Tuni, los efectos de sonido y la música se han generado con <strong>ElevenLabs</strong> (síntesis de voz, ElevenLabs Sound Effects y ElevenLabs Music), con la licencia comercial del plan Starter. Las ilustraciones (logotipo, iconos, fondos, pegatinas, criaturas y dibujos de palabras) se han creado con <strong>ChatGPT</strong>. Los créditos completos están en la pantalla «Créditos» de la zona para adultos.
-    </div>
-    <p>Todo este contenido se generó durante el desarrollo y viaja dentro de la app. En ningún caso implica la captura ni el procesamiento de la voz, audio, imagen o sonidos del usuario o del menor, ni envía datos a ElevenLabs u OpenAI.</p>
-  </section>
-
-  <!-- ══ SECCIÓN 7 ════════════════════════════════════════════════════ -->
-  <section id="s7">
-    <h2><span class="section-icon">🔐</span> 7. Control parental y acceso a ajustes</h2>
-    <p>La sección de ajustes de la aplicación está protegida mediante una <strong>comprobación parental</strong> (parent gate) que consiste en resolver una operación matemática sencilla. Esta medida está diseñada para garantizar que los cambios de configuración sean realizados por un adulto y no accidentalmente por el menor.</p>
-    <p>La resolución de esta operación matemática:</p>
-    <ul>
-      <li>Se procesa completamente en el dispositivo, sin conexión a internet.</li>
-      <li>No genera ni almacena ningún registro de acceso.</li>
-      <li>No solicita contraseña, PIN ni dato personal alguno.</li>
-    </ul>
-  </section>
-
-  <!-- ══ SECCIÓN 8 ════════════════════════════════════════════════════ -->
-  <section id="s8">
-    <h2><span class="section-icon">🛒</span> 8. Modelo de monetización freemium</h2>
-    <p>La aplicación sigue un modelo <strong>freemium</strong>: algunos contenidos están disponibles de forma gratuita y otros pueden desbloquearse como contenido premium.</p>
-    <p>Las compras integradas (in-app purchases) se realizan exclusivamente a través de los sistemas de pago oficiales de <strong>Apple (App Store)</strong> y <strong>Google (Google Play)</strong>. El desarrollador no recibe ni almacena datos de tarjeta ni información bancaria: el pago lo procesa la tienda.</p>
-    <p>Para consultar, validar y restaurar el estado premium en el dispositivo, la app usa <strong>RevenueCat SDK</strong> (ver sección 5). El SDK mantiene un perfil técnico anónimo y, cuando hay una transacción, trata la información de compra facilitada por la tienda. El desarrollador no recibe datos de tarjeta ni información bancaria.</p>
-    <p>El acceso al paywall de compra está siempre detrás de una <strong>comprobación parental</strong> (parent gate), conforme a las directrices de apps infantiles.</p>
-  </section>
-
-  <!-- ══ SECCIÓN 9 ════════════════════════════════════════════════════ -->
-  <section id="s9">
-    <h2><span class="section-icon">🇺🇸</span> 9. Menores de 13 años — COPPA (EE. UU.)</h2>
-    <p>La <em>Children's Online Privacy Protection Act</em> (COPPA) exige a los operadores de servicios en línea dirigidos a menores de 13 años que obtengan el consentimiento verificable de los padres antes de recoger información personal de esos menores.</p>
-
-    <h3>Cómo trata Mundo Tuni los datos de menores</h3>
-    <p>Mundo Tuni <strong>no solicita información personal identificable del menor</strong> (nombre, fecha de nacimiento, correo, cuenta, etc.). Solo pregunta al adulto, de forma opcional, la edad aproximada del niño, que se guarda como franja en el dispositivo para ajustar la dificultad. El progreso de juego y esa franja permanecen en el dispositivo. RevenueCat se inicializa para consultar el estado premium y las opciones de compra mediante un perfil técnico anónimo; las compras requieren una acción adulta tras la puerta parental. En iOS, AdServices aporta la atribución de Apple Ads descrita en la sección 5.</p>
-    <p>En concreto:</p>
-    <ul>
-      <li>La app no solicita nombre, fecha de nacimiento, correo electrónico ni ningún dato identificativo del niño.</li>
-      <li>La franja de edad aproximada (2–3 o 3–4 años) se guarda solo en el dispositivo y no se envía a nadie.</li>
-      <li>No hay registro de usuario ni perfiles con datos personales.</li>
-      <li>No hay publicidad comportamental ni de ningún otro tipo.</li>
-      <li>No se usa geolocalización.</li>
-      <li>No se asignan al perfil técnico de compras la franja de edad, el progreso ni otras actividades educativas del niño.</li>
-    </ul>
-    <div class="callout callout-success">
-      Mundo Tuni está diseñada para minimizar los datos y no solicitar información personal del niño.
-    </div>
-  </section>
-
-  <!-- ══ SECCIÓN 10 ═══════════════════════════════════════════════════ -->
-  <section id="s10">
-    <h2><span class="section-icon">🇪🇺</span> 10. Menores en la Unión Europea — RGPD y GDPR-K</h2>
-    <p>El <em>Reglamento General de Protección de Datos</em> (RGPD / GDPR, Reglamento UE 2016/679) y, en especial, las disposiciones específicas sobre menores (<em>GDPR-K</em>) establecen una protección reforzada para el tratamiento de datos de menores de edad.</p>
-
-    <h3>Base jurídica y tratamiento</h3>
-    <p>El progreso de juego, la franja de edad y las preferencias se tratan <strong>solo en el dispositivo</strong> sin una cuenta del menor. Los datos técnicos de compra se usan para prestar, verificar y restaurar el acceso premium solicitado por el adulto.</p>
-
-    <h3>Principios de privacidad por diseño y por defecto</h3>
-    <p>La arquitectura aplica medidas de minimización inspiradas en el artículo 25 del RGPD:</p>
-    <ul>
-      <li><strong>Minimización de datos:</strong> el progreso educativo queda local; RevenueCat tiene desactivada la recogida automática de identificadores y el ID técnico solo se consulta bajo demanda para preparar una solicitud de borrado.</li>
-      <li><strong>Limitación de finalidad:</strong> los datos locales se usan únicamente para la finalidad para la que fueron creados.</li>
-      <li><strong>Limitación del plazo de conservación:</strong> la desinstalación elimina el almacenamiento local de Mundo Tuni, sujeto a las funciones de copia o restauración del sistema operativo. El perfil técnico de RevenueCat requiere la solicitud descrita en la sección 11; la compra permanece en Apple o Google y puede restaurarse.</li>
-      <li><strong>Integridad y confidencialidad:</strong> los datos de progreso permanecen en el dispositivo; los flujos técnicos externos se limitan a las funciones de compra y atribución descritas en la sección 5.</li>
-    </ul>
-
-    <h3>Transferencia internacional de datos</h3>
-    <p>Los datos de validación de compras procesados por RevenueCat pueden transferirse a <strong>Estados Unidos</strong>, con las garantías descritas en la sección 5 (SCC y Data Privacy Framework de RevenueCat). No realizamos otras transferencias internacionales de datos personales.</p>
-
-    <h3>Delegado de Protección de Datos (DPD)</h3>
-    <p>Para cualquier consulta relacionada con la protección de datos, puedes contactar directamente con el desarrollador en <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>.</p>
-  </section>
-
-  <!-- ══ SECCIÓN 11 ═══════════════════════════════════════════════════ -->
-  <section id="s11">
-    <h2><span class="section-icon">⚖️</span> 11. Derechos de padres y tutores</h2>
-    <p>Los tutores pueden plantear una solicitud sobre el perfil técnico de compras escribiendo a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>:</p>
-    <ul>
-      <li><strong>Derecho de acceso:</strong> a conocer qué información (si la hubiera) se almacena en relación con el uso de la app.</li>
-      <li><strong>Derecho de supresión:</strong> a solicitar la eliminación del perfil técnico de RevenueCat; desinstalar la app solo actúa sobre el almacenamiento local y no sustituye esta solicitud.</li>
-      <li><strong>Derecho de rectificación:</strong> a corregir cualquier dato inexacto.</li>
-      <li><strong>Derecho de oposición:</strong> a oponerse al tratamiento de datos.</li>
-      <li><strong>Derecho de portabilidad:</strong> a recibir los datos en un formato estructurado.</li>
-      <li><strong>Derecho a presentar una reclamación:</strong> ante la Agencia Española de Protección de Datos (AEPD) en <a href="https://www.aepd.es" target="_blank" rel="noopener">www.aepd.es</a> o ante la autoridad de control de tu país de residencia en la UE.</li>
-    </ul>
-    <p>Responderemos a cualquier solicitud en un plazo máximo de <strong>30 días</strong> desde su recepción.</p>
-  </section>
-
-  <!-- ══ SECCIÓN 12 ═══════════════════════════════════════════════════ -->
-  <section id="s12">
-    <h2><span class="section-icon">🛡️</span> 12. Seguridad</h2>
-    <p>Hemos adoptado las siguientes medidas técnicas para reducir y proteger la información tratada por la app:</p>
-    <ul>
-      <li>Los datos locales están almacenados en el área de almacenamiento privada de la app, inaccesible para otras aplicaciones del dispositivo.</li>
-      <li>Las conexiones de compra y atribución usan los mecanismos cifrados de los servicios descritos en la sección 5.</li>
-      <li>La sección de ajustes sensibles está protegida por el parent gate descrito en la sección 7.</li>
-    </ul>
-    <p>La seguridad del dispositivo en su conjunto (contraseña de pantalla, actualizaciones del sistema operativo, etc.) es responsabilidad del tutor.</p>
-  </section>
-
-  <!-- ══ SECCIÓN 13 ═══════════════════════════════════════════════════ -->
-  <section id="s13">
-    <h2><span class="section-icon">🔄</span> 13. Cambios en esta política</h2>
-    <p>Esta política puede actualizarse para reflejar cambios en la funcionalidad de la app o nuevos requisitos legales.</p>
-    <p>Cuando se realicen cambios materiales:</p>
-    <ul>
-      <li>Actualizaremos la fecha de «Última actualización» en la parte inferior de este documento.</li>
-      <li>Notificaremos el cambio a través de una actualización de la app en las tiendas de aplicaciones.</li>
-      <li>Si los cambios afectan al tratamiento de datos personales, solicitaremos el consentimiento necesario.</li>
-    </ul>
-    <p>Te recomendamos revisar esta política periódicamente. El uso continuado de la aplicación tras la publicación de cambios implica la aceptación de la política actualizada.</p>
-    <p><strong>Cambios en esta versión (1.3, 24 de septiembre de 2026), respecto a la 1.1 publicada:</strong> se describe la pregunta opcional por la edad aproximada del niño, que se guarda como franja solo en el dispositivo; se detalla que RevenueCat se inicia al abrir la app, la atribución de Apple Ads mediante AdServices sin IDFA, los recordatorios y la solicitud de borrado desde la zona para adultos; y se sustituye la nota de licencias por las herramientas usadas (ElevenLabs para voz, efectos de sonido y música; ChatGPT para las ilustraciones).</p>
-  </section>
-
-  <!-- ══ SECCIÓN 14 ═══════════════════════════════════════════════════ -->
-  <section id="s14">
-    <h2><span class="section-icon">✉️</span> 14. Contacto</h2>
-    <p>Si tienes preguntas, dudas o solicitudes relacionadas con esta política de privacidad o con el tratamiento de datos de la aplicación, puedes contactarnos:</p>
-    <div class="contact-box">
-      <p><strong>Elrond2</strong></p>
-      <p>Desarrollador de Mundo Tuni: Aprende Jugando</p>
-      <p>📧 <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a></p>
-      <p style="margin-top: 12px; font-size: 0.85rem; color: var(--color-muted);">Tiempo de respuesta habitual: 2–5 días laborables. Máximo legal: 30 días.</p>
-    </div>
-  </section>
-
-  <!-- ══ FOOTER ════════════════════════════════════════════════════════ -->
-  <footer class="doc-footer">
-    <p><strong>Mundo Tuni: Aprende Jugando</strong> &nbsp;·&nbsp; Bundle ID: es.mundotuni.tuni</p>
-    <p>Versión de esta política: <strong>1.3</strong> &nbsp;·&nbsp; Última actualización: <strong>24 de septiembre de 2026</strong></p>
-    <p style="font-size: 0.8rem; color: var(--color-muted);">Fuente canónica: repositorio <code>mundotuni</code> → <code>docs/privacy-policy.html</code>. Despliegue público: <code>https://elrond2.github.io/mundotuni-privacy/privacy.html</code></p>
-    <p>© 2026 Elrond2. Todos los derechos reservados.</p>
-    <p style="margin-top: 8px;">
-      Este documento está disponible en español (es-ES) como idioma principal.
-      Para solicitar la versión en inglés, escribe a <a href="mailto:mundotuni.app@gmail.com">mundotuni.app@gmail.com</a>.
-    </p>
-  </footer>
-
-</div><!-- /wrapper -->
-
-  </div><!-- /doc-page -->
+  </main>
 
   <footer class="site-footer">
     <nav aria-label="Legal y soporte">
