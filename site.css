@@ -603,6 +603,8 @@ code { font-size: 0.88em; background: var(--face-bottom); padding: 1px 6px; bord
 .module-chips .m-colores  { --tint: var(--pink); }
 .module-chips .m-palabras { --tint: var(--mint); }
 .module-chips .m-musica   { --tint: var(--mauve); }
+.module-chips .m-idiomas  { --tint: var(--sage); }
+.module-chips .m-mates    { --tint: var(--blue); }
 
 .hero-benefits {
   list-style: none;
