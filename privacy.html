@@ -34,7 +34,7 @@
       <img class="app-icon-img" src="icon.png" alt="" width="72" height="72" />
       <div>
         <h1>Política de privacidad</h1>
-        <p>Mundo Tuni: Aprende Jugando · Versión 1.4 · 21 de octubre de 2026</p>
+        <p>Mundo Tuni: Aprende Jugando · Versión 1.5 · 22 de octubre de 2026</p>
       </div>
     </header>
 
@@ -184,7 +184,7 @@
         </div>
 
         <p><strong>Recordatorios.</strong> Si el adulto los activa en la zona para adultos, la app pide permiso de notificaciones al sistema y programa un recordatorio diario como notificación local del propio dispositivo. No pasa por ningún servidor.</p>
-        <p><strong>Repetir con micrófono.</strong> Viene desactivado. Si el adulto lo activa en la zona para adultos, la app pide permiso de micrófono al sistema. Después, en el rincón de idiomas, cuando Lola enseña una palabra, la app escucha unos segundos, guarda la voz del niño en un archivo temporal del dispositivo, la reproduce una vez para que la compare con la de Lola y la borra en ese momento. La voz no se guarda, no se envía a ningún servicio y no se transcribe: la app solo mide su volumen para saber cuándo empieza y acaba de hablar. Se puede desactivar en cualquier momento en la zona para adultos, o retirar el permiso en los ajustes del dispositivo.</p>
+        <p><strong>Repetir con micrófono.</strong> Viene desactivado. Si el adulto lo activa en la zona para adultos, la app pide permiso de micrófono al sistema. Después, en el rincón de idiomas, cuando Lola enseña una palabra, la app escucha unos segundos, guarda la voz del niño en un archivo temporal del dispositivo, la reproduce una vez para que la compare con la de Lola y la borra en ese momento. Si la app se cierra a mitad (por ejemplo, porque el sistema la detiene), el archivo se borra la próxima vez que se abre la app. La voz no se guarda, no se envía a ningún servicio y no se transcribe: la app solo mide su volumen para saber cuándo empieza y acaba de hablar. Se puede desactivar en cualquier momento en la zona para adultos, o retirar el permiso en los ajustes del dispositivo.</p>
 
         <h3>Cómo borrar estos datos</h3>
         <ul>
@@ -210,7 +210,7 @@
         <p>RevenueCat guarda los datos en servidores de EE. UU. Esa transferencia se ampara en las Cláusulas Contractuales Tipo de la Comisión Europea, incluidas en su <a href="https://www.revenuecat.com/dpa" target="_blank" rel="noopener">acuerdo de encargo del tratamiento</a>. Puedes pedirnos información sobre estas garantías, y una copia, en <a href="mailto:hola@mundotuni.com">hola@mundotuni.com</a>. Más información en la <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">política de privacidad de RevenueCat</a>.</p>
 
         <h3>Atribución de Apple Ads (solo iOS)</h3>
-        <p>En iOS, el SDK de RevenueCat obtiene el token de atribución que Apple facilita mediante AdServices y lo envía a RevenueCat, que pregunta a Apple si la instalación procede de una campaña de Apple Ads. Si es así, RevenueCat guarda en el perfil técnico los datos de campaña que devuelve Apple (campaña, grupo de anuncios, palabra clave y tipo de atribución). Los usamos solo para medir, de forma agregada, qué campañas funcionan. Es la atribución estándar de Apple: no usa IDFA, no necesita el permiso de seguimiento (ATT), no permite seguir a nadie entre apps o sitios web y no incluye el nombre, la franja de edad ni el progreso del niño.</p>
+        <p>En iOS, al abrir la app, el SDK de RevenueCat obtiene el token de atribución que Apple facilita mediante AdServices y lo envía a RevenueCat, que pregunta a Apple si la instalación procede de una campaña de Apple Ads. Si es así, RevenueCat guarda en el perfil técnico los datos de campaña que devuelve Apple (campaña, grupo de anuncios, palabra clave y tipo de atribución). Los usamos solo para medir, de forma agregada, qué campañas funcionan. Es la atribución estándar de Apple: no usa IDFA, no necesita el permiso de seguimiento (ATT), no permite seguir a nadie entre apps o sitios web y no incluye el nombre, la franja de edad ni el progreso del niño. Ocurre de forma automática, sin ninguna acción del adulto ni del niño y antes de la comprobación parental: el niño no ve ni elige nada en este proceso.</p>
 
         <h3>Solicitud de borrado del perfil técnico de compras</h3>
         <p>Desde la zona para adultos se puede preparar un correo a <a href="mailto:hola@mundotuni.com">hola@mundotuni.com</a> para pedir el borrado del perfil técnico de RevenueCat. Solo cuando el adulto lo confirma, la app obtiene el identificador técnico y lo incluye en el borrador. La app no copia ese identificador en registros ni en su propio almacenamiento, y no envía el correo por su cuenta: lo envía el adulto si quiere.</p>
@@ -235,7 +235,7 @@
           <strong>Herramientas y licencias.</strong>
           La voz de Tuni, los efectos de sonido y la música se han generado con <strong>ElevenLabs</strong> (síntesis de voz, ElevenLabs Sound Effects y ElevenLabs Music), con la licencia comercial del plan Starter. Las ilustraciones (logotipo, iconos, fondos, pegatinas, criaturas y dibujos de palabras) se han creado con <strong>ChatGPT</strong>. Los créditos completos están en la pantalla «Créditos» de la zona para adultos.
         </div>
-        <p>Todo este contenido se generó durante el desarrollo y viaja dentro de la app. La app no graba ni procesa la voz, la imagen ni los sonidos del usuario o del niño, y no envía datos a ElevenLabs ni a OpenAI.</p>
+        <p>Todo este contenido se generó durante el desarrollo y viaja dentro de la app. La app no graba la imagen del usuario ni del niño. Solo graba la voz del niño si un adulto activa «Repetir con micrófono» (sección 4), y en ese caso la reproduce y la borra en el propio dispositivo, sin transcribirla. La app no envía datos a ElevenLabs ni a OpenAI.</p>
       </section>
 
       <section class="doc-section" id="s7">
@@ -335,6 +335,7 @@
           <li>Actualizaremos la versión y la fecha que aparecen al principio y al final de este documento.</li>
           <li>Si un cambio exige tu consentimiento, te lo pediremos antes de aplicarlo.</li>
         </ul>
+        <p><strong>Cambios en la versión 1.5 (22 de octubre de 2026), respecto a la 1.4:</strong> la sección 6 ya no dice que la app no graba la voz del niño sin mencionar la excepción de «Repetir con micrófono»; la sección 4 añade que, si la app se cierra a mitad de una grabación, el archivo se borra al abrirla de nuevo; y la sección 5 precisa que la atribución de Apple Ads se hace al abrir la app, de forma automática y antes de la comprobación parental. No cambian los datos que se tratan ni con quién se comparten.</p>
         <p><strong>Cambios en la versión 1.4 (21 de octubre de 2026), respecto a la 1.3:</strong> la app es para niñas y niños de 2 a 6 años, y la franja de edad tiene tres opciones (2 años, 3 años o de 4 a 6 años) que, además de elegirse en la presentación inicial, se pueden cambiar en la zona para adultos; si se salta la pregunta, se usa la de 3 años. La racha desaparece de la tabla, porque la app ya no la muestra ni la guarda: al actualizar, se borra del dispositivo el recuento de días seguidos que quedaba guardado. La tabla de la sección 4 detalla los datos nuevos, todos solo en el dispositivo: el idioma de juego y su variante, el tiempo de juego y el final de sesión, los subtítulos de Tuni, la ayuda para daltonismo, las explicaciones de las recompensas ya vistas, el progreso de los juegos de matemáticas y del rincón de idiomas, los días de juego y el último elemento jugado de cada mundo. Se indican los idiomas de la app (español, catalán e inglés), con la zona para adultos en el idioma del juego, y la política se publica también en inglés. Se añade «Repetir con micrófono», opcional y desactivado por defecto: la voz del niño se reproduce y se borra en el dispositivo, sin enviarse ni guardarse (secciones 3 y 4). El correo de contacto pasa a ser hola@mundotuni.com, alojado en iCloud Mail (Apple).</p>
         <p><strong>Cambios en la versión 1.3 (24 de septiembre de 2026), respecto a la 1.1:</strong> se explica la pregunta opcional por la edad aproximada del niño, que se guarda como franja solo en el dispositivo; se detalla que RevenueCat se inicia al abrir la app con un identificador técnico seudónimo, la atribución de Apple Ads mediante AdServices sin IDFA, los recordatorios, las valoraciones en la tienda, la solicitud de borrado desde la zona para adultos y el tratamiento de los correos y de las visitas a esta web; se indican las bases jurídicas, los plazos de conservación y la garantía de las transferencias a EE. UU. (Cláusulas Contractuales Tipo); y se sustituye la nota de licencias por las herramientas usadas (ElevenLabs para voz, efectos y música; ChatGPT para las ilustraciones).</p>
       </section>
@@ -351,7 +352,7 @@
 
       <footer class="doc-footer">
         <p><strong>Mundo Tuni: Aprende Jugando</strong> · Bundle ID: es.mundotuni.tuni</p>
-        <p>Versión de esta política: <strong>1.4</strong> · Última actualización: <strong>21 de octubre de 2026</strong></p>
+        <p>Versión de esta política: <strong>1.5</strong> · Última actualización: <strong>22 de octubre de 2026</strong></p>
         <p>© 2026 Elrond2. Todos los derechos reservados.</p>
       </footer>
 
