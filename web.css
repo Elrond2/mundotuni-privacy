@@ -199,10 +199,10 @@ p { margin: 0 0 1em; }
 /* Blog y aviso legal */
 .post-list { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; }
 .post-card { position: relative; background: var(--white); border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); border-top: 6px solid var(--card, var(--ocean)); display: flex; flex-direction: column; }
-.post-card h2 { font-size: 1.4rem; }
-.post-card h2 a { text-decoration: none; color: var(--deep); }
-.post-card h2 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
-.post-card h2 a:focus-visible::after { outline: 3px solid var(--coral); outline-offset: 2px; }
+.post-card h2, .post-card h3 { font-size: 1.4rem; }
+.post-card h2 a, .post-card h3 a { text-decoration: none; color: var(--deep); }
+.post-card h2 a::after, .post-card h3 a::after { content: ""; position: absolute; inset: 0; border-radius: var(--radius); }
+.post-card h2 a:focus-visible::after, .post-card h3 a:focus-visible::after { outline: 3px solid var(--coral); outline-offset: 2px; }
 .post-card p { color: var(--muted); }
 .post-card .text-link { margin-top: auto; }
 .post-icon img { width: 56px; height: 56px; margin-bottom: 12px; }
@@ -273,3 +273,17 @@ p { margin: 0 0 1em; }
 }
 @media (max-width: 760px) { .lola-art .shot-card.small { display: none; } .lola-img { margin-bottom: 0; } }
 @media (max-width: 760px) { .offer-card .button { margin-inline: auto; } }
+
+/* Índice del artículo, lecturas relacionadas, bloque del blog en la portada y página 404 */
+.toc { background: var(--white); border-radius: 18px; box-shadow: var(--shadow); padding: 18px 22px; margin: 0 0 1.6em; }
+.toc-title { font-family: "Fredoka", "Nunito", sans-serif; font-weight: 600; color: var(--deep); font-size: 1.1rem; margin: 0 0 6px; }
+.post-body .toc ol { margin: 0; padding-left: 1.3em; }
+.toc li { margin: 0.25em 0; }
+.blog-all { text-align: center; margin: 28px 0 0; }
+.related-section .section-title { margin-bottom: 28px; }
+.notfound-links { justify-content: center; }
+.support-contact { margin: 18px 0 0; }
+.support-mail { justify-content: center; margin-top: 12px; }
+.faq-list details .button { margin-top: 4px; }
+.postura-section .section-lead { margin-bottom: 18px; }
+.postura-link { text-align: center; margin: 0; }
