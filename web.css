@@ -184,6 +184,10 @@ p { margin: 0 0 1em; }
 .offer-card .button { display: block; width: max-content; background: var(--mustard); color: #123b4e; margin-top: 22px; }
 .offer-card .button:hover { background: #ffd978; color: #123b4e; }
 .foot-store { font-weight: 800; margin-top: 10px !important; }
+.foot-social { list-style: none; display: flex; gap: 10px; margin: 16px 0 4px; padding: 0; }
+.foot-social li { margin: 0; }
+.foot .foot-social a { display: inline-flex; align-items: center; justify-content: center; width: 42px; height: 42px; margin: 0; border-radius: 50%; background: rgba(255, 255, 255, 0.1); }
+.foot .foot-social a:hover, .foot .foot-social a:focus-visible { background: rgba(255, 255, 255, 0.22); text-decoration: none; }
 
 /* Pie */
 .foot { background: #123b4e; color: #d6e6ec; padding: 56px 0 28px; margin-top: 40px; }
