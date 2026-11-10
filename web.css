@@ -291,3 +291,17 @@ p { margin: 0 0 1em; }
 .faq-list details .button { margin-top: 4px; }
 .postura-section .section-lead { margin-bottom: 18px; }
 .postura-link { text-align: center; margin: 0; }
+
+/* «Nuestros compromisos» (REF-16): tarjetas con su matiz, qué sale del dispositivo y lo que no prometemos */
+.page-commitments .section.alt { background: var(--sand); }
+.commit-checked { display: inline-block; margin: 18px auto 0; padding: 8px 16px; border-radius: 999px; background: var(--white); color: var(--deep); font-weight: 700; font-size: 0.95rem; box-shadow: var(--shadow); }
+.commit-list { list-style: none; padding: 0; margin: 32px 0 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr)); gap: 20px; }
+.commit { background: var(--white); border-radius: var(--radius); padding: 24px 22px; box-shadow: var(--shadow); border-top: 6px solid var(--m-shapes); }
+.commit h3 { margin: 0 0 8px; }
+.commit p { margin: 0; color: var(--ink); }
+.commit .commit-but { margin-top: 12px; padding-top: 12px; border-top: 1px dashed var(--line); color: var(--muted); font-size: 0.95rem; }
+.commit-but strong { color: var(--deep); }
+.commit-facts div { grid-template-columns: minmax(120px, 34%) 1fr; }
+.commit-not { padding-left: 1.2em; }
+.commit-not li { margin: 0.5em 0; }
+@media (max-width: 560px) { .commit-facts div { grid-template-columns: 1fr; gap: 4px; } }
