@@ -300,3 +300,42 @@ p { margin: 0 0 1em; }
 .commit-not { padding-left: 1.2em; }
 .commit-not li { margin: 0.5em 0; }
 @media (max-width: 560px) { .commit-facts div { grid-template-columns: 1fr; gap: 4px; } }
+
+/* Android y código QR junto a la insignia (portada, 20-11-2026) */
+.cta-store { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
+.android-link { font-weight: 800; font-size: 0.95rem; text-decoration: none; color: var(--deep); padding: 2px 0; }
+.android-link:hover { text-decoration: underline; }
+.qr-card { display: none; align-items: center; gap: 16px; margin-top: 22px; background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 12px 18px 12px 12px; box-shadow: var(--shadow); max-width: 380px; }
+.qr-card img { width: 112px; height: 112px; border-radius: 10px; flex: none; }
+.qr-card p { margin: 0; font-size: 0.95rem; line-height: 1.4; color: var(--ink); }
+/* Solo en pantallas anchas con ratón (escritorio): en un móvil o una tableta se toca directamente la insignia. */
+@media (min-width: 1000px) and (hover: hover) and (pointer: fine) { .qr-card { display: flex; } }
+
+/* Temporada de invierno: bloque de la portada y página propia (20-11-2026) */
+.season-section { padding: 0; margin-top: -40px; position: relative; z-index: 1; }
+.season-card { display: grid; grid-template-columns: 150px 1fr; gap: 28px; align-items: center; background: linear-gradient(135deg, #e6f6fc, #c4e9f6); border: 1px solid var(--line); border-radius: 32px; padding: 24px 36px; box-shadow: var(--shadow); }
+.season-card h2 { font-size: clamp(1.4rem, 3vw, 1.9rem); margin-bottom: 0.3em; }
+.season-card p { margin: 0 0 14px; color: var(--ink); }
+.season-nevi { width: 130px; justify-self: center; }
+.winter-hero .winter-cta { justify-content: center; margin-bottom: 0; }
+.winter-banner-section { padding: 8px 0 24px; }
+.winter-banner { margin: 0; border-radius: 32px; overflow: hidden; box-shadow: var(--shadow-lg); }
+.winter-banner-img { width: 100%; }
+.winter-note { color: var(--muted); font-size: 0.98rem; }
+.winter-nevi { width: 240px; }
+.winter-faq { margin: 0; }
+.winter-faq dt { font-family: "Fredoka", "Nunito", sans-serif; font-weight: 600; color: var(--deep); font-size: 1.15rem; margin-top: 18px; }
+.winter-faq dd { margin: 4px 0 0; }
+.offer-android { margin: 14px 0 0; }
+.offer-android a { color: var(--white); font-weight: 800; }
+@media (max-width: 760px) {
+  .season-section { margin-top: -28px; }
+  .season-card { grid-template-columns: 1fr; text-align: center; padding: 22px 20px; gap: 12px; }
+  .season-nevi { width: 100px; }
+  .winter-banner { border-radius: 22px; }
+}
+
+/* Clip de la app en la portada (es y en) */
+.video-section { padding-bottom: 24px; }
+.video-card { margin: 0 auto; width: min(260px, 70vw); border-radius: 38px; padding: 8px; background: var(--white); box-shadow: var(--shadow-lg); }
+.video-card video { display: block; width: 100%; height: auto; border-radius: 30px; background: #bfe8f7; }
